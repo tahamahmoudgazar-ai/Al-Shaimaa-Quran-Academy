@@ -1,0 +1,1455 @@
+/* ===== General ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9ff;
+    color: #333;
+}
+
+
+/* ===== Header ===== */
+
+header {
+    background-color: #6ec6ff;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+header h1{
+    color:#0d47a1;
+}
+
+header p{
+    color:#37474f;
+}
+
+
+/* ===== Navigation ===== */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe082;
+}
+
+
+/* ===== Sections ===== */
+
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2196f3;
+    margin-bottom: 30px;
+}
+
+
+/* ===== Welcome ===== */
+
+.welcome p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+/* ===== Courses ===== */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 300px));
+    justify-content: center;
+    gap: 25px;
+}
+
+.course{
+
+    background:#e3f2fd;
+
+    border:2px solid #90caf9;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.course h3 {
+    color: #00897b;
+    margin-bottom: 15px;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+/* ===== Footer ===== */
+
+footer{
+
+    background:#0d47a1;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+
+footer h3{
+
+    font-size:28px;
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+footer p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+/* ===== Mobile ===== */
+
+@media (max-width:768px){
+
+    .course-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .course-card{
+        width:90%;
+        margin-bottom:20px;
+    }
+
+}
+/* ===== Hero Section ===== */
+
+.hero{
+    background: linear-gradient(135deg,#6ec6ff,#2196f3);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    border-radius:0 0 30px 30px;
+}
+
+.hero h2{
+    color:#0d47a1;
+}
+.hero p{
+    color:#333;
+}
+
+.hero-image{
+    margin-top:30px;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:350px;
+    height:auto;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#d4af37;
+    color:#000;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    font-size:18px;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.btn:hover{
+    background:#ffe082;
+    color:#000;
+}
+/* ===== Video Section ===== */
+
+.video-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.video-section video{
+    width:100%;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+/* ===== Teachers Section ===== */
+
+.teachers{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.teacher-card{
+
+    background:#e3f2fd;
+
+    border:2px solid #90caf9;
+
+    width:280px;
+
+    margin:30px auto;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+.teacher-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.teacher-card img{
+
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:15px;
+    border:4px solid #90caf9;
+
+}
+.teacher-card h3{
+    color:#00897b;
+    margin-bottom:10px;
+}
+
+.teacher-card p{
+    color:#555;
+}
+.teachers-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+/* ===== WhatsApp Floating Button ===== */
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    z-index:1000;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+/* ===== Courses Page ===== */
+
+.courses-page{
+    text-align:center;
+}
+
+.course-container{
+    display:grid;
+    grid-template-columns:repeat(3, 250px);
+    justify-content:center;
+    gap:25px;
+}
+
+.course-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-8px);
+}
+
+.course-card i{
+    font-size:45px;
+    color:#2196f3;
+    margin-bottom:20px;
+}
+
+.course-card h3{
+    color:#00897b;
+    margin-bottom:15px;
+}
+
+.course-card p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.course-card a{
+    display:inline-block;
+    background:#2196f3;
+    color:white;
+    padding:10px 25px;
+    border-radius:25px;
+    text-decoration:none;
+}
+
+.course-card a:hover{
+    background:#00897b;
+}
+
+
+/* ===== Register Page ===== */
+
+.register-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.register-section form{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.register-section input,
+.register-section select,
+.register-section textarea{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+
+.register-section textarea{
+    height:120px;
+    resize:none;
+}
+
+
+.register-section button{
+
+    background:#2196f3;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+.register-section button:hover{
+
+    background:#00897b;
+
+}
+/* ===== About Page ===== */
+
+.about-section{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.about-section h2{
+    margin-top:35px;
+}
+
+.about-section p{
+    font-size:18px;
+    color:#555;
+}
+
+
+/* About Cards */
+
+.about-cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.about-card{
+
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.about-card h3{
+    color:#00897b;
+    margin-bottom:15px;
+}
+
+.about-card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+.about-image img{
+
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+/* ===== Contact Page ===== */
+
+.contact-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+
+.contact-card{
+
+    background:white;
+    max-width:450px;
+    margin:auto;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+.contact-card p{
+
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+
+}
+
+
+.contact-card a{
+
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+.contact-card a:hover{
+
+    background:#128C7E;
+
+}
+/* ===== Floating WhatsApp Button ===== */
+
+.whatsapp-float{
+
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    z-index:1000;
+
+}
+
+
+.whatsapp-float:hover{
+
+    background:#128C7E;
+
+}
+/* ===== WhatsApp Animation ===== */
+
+@keyframes whatsappPulse{
+
+0%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(37,211,102,.7);
+}
+
+70%{
+transform:scale(1.08);
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+}
+
+100%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+}
+
+}
+
+.whatsapp-float{
+
+animation:whatsappPulse 2s infinite;
+
+transition:.3s;
+
+}
+
+.whatsapp-float:hover{
+
+animation:none;
+
+transform:scale(1.15);
+
+}
+/* ===== Reviews ===== */
+
+.reviews{
+
+    padding:40px 20px;
+
+    background:#f8fbff;
+
+    text-align:center;
+
+}
+
+
+.reviews-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+
+}
+
+
+.review-card{
+
+    background:#e3f2fd;
+
+    width:300px;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+.review-card h3{
+
+    color:#FFD700;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+
+.review-card p{
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    color:#555;
+
+    margin-bottom:10px;
+
+}
+
+
+.review-card h4{
+
+    font-size:15px;
+
+    color:#2196f3;
+
+    margin-bottom:5px;
+
+}
+
+
+.review-card span{
+
+    font-size:13px;
+
+    color:#00897b;
+
+    font-weight:bold;
+
+}
+/* ===== Statistics ===== */
+
+.stats{
+
+    background:#2196f3;
+    color:white;
+    padding:40px 20px;
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+
+}
+
+.stat-box{
+
+    text-align:center;
+    min-width:90px;
+
+}
+
+.stat-box h2{
+
+    font-size:22px;
+    color:#FFD700;
+    margin-bottom:3px;
+
+}
+
+.stat-box p{
+
+    font-size:12px;
+
+}
+/* ===== Back To Top ===== */
+
+.back-to-top{
+
+    position:fixed;
+    bottom:90px;
+    right:20px;
+
+    width:50px;
+    height:50px;
+
+    background:#2196f3;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.back-to-top:hover{
+
+    background:#1565c0;
+
+    transform:scale(1.1);
+
+}
+/* Why Us */
+
+.why-us{
+
+padding:70px 20px;
+
+text-align:center;
+
+background:white;
+
+}
+
+.why-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+.why-card{
+
+width:260px;
+
+padding:30px;
+
+background:#e3f2fd;
+border:2px solid #90caf9;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.why-card i{
+
+font-size:45px;
+
+color:#2196f3;
+
+margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+margin-bottom:15px;
+
+color:#00897b;
+
+}
+
+
+/* ===== Top Banner ===== */
+
+.top-banner{
+
+    background:#FFD54F;
+    color:#222;
+    overflow:hidden;
+    white-space:nowrap;
+    padding:12px 0;
+
+}
+
+.banner-track{
+
+    display:inline-block;
+    padding-left:100%;
+    animation:bannerMove 18s linear infinite;
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+@keyframes bannerMove{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-100%);
+    }
+
+}
+
+.top-banner:hover .banner-track{
+
+    animation-play-state:paused;
+
+}
+/* ===== How It Works ===== */
+
+.how-it-works{
+    padding:70px 20px;
+    text-align:center;
+    background:#f8fbff;
+    width:100%;
+    overflow:hidden;
+}
+
+.step{
+
+    width:280px;
+
+    background:#e3f2fd;
+
+    border:2px solid #90caf9;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+.step:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.step-number{
+
+    width:60px;
+
+    height:60px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#2196f3;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:20px;
+
+}
+
+.step h3{
+
+    color:#1565c0;
+
+    margin-bottom:15px;
+
+}
+
+.step p{
+
+    line-height:1.7;
+
+    color:#555;
+
+}
+.steps-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+    width:100%;
+    margin:auto;
+}
+/* ===== Countries ===== */
+
+.countries{
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    background:#f8fbff;
+
+}
+
+.countries h2{
+
+    color:#1565c0;
+
+    margin-bottom:15px;
+
+}
+
+.countries p{
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+.countries-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.country{
+
+    background:#e3f2fd;
+
+    border:2px solid #90caf9;
+
+    padding:15px 25px;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.country:hover{
+
+    background:#2196f3;
+
+    color:white;
+
+    transform:scale(1.05);
+
+}
+/* ===== Social Icons ===== */
+
+.social-icons{
+
+    margin-top:20px;
+
+}
+
+.social-icons a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:45px;
+
+    height:45px;
+
+    margin:0 10px;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:white;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#1565c0;
+
+    transform:scale(1.15);
+
+}
+
+/* Mobile Design */
+
+@media (max-width: 768px){
+
+    header{
+        padding:20px;
+    }
+
+    header img{
+        width:70px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .courses,
+    .reviews-container,
+    .teachers-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .course-card,
+    .review-card,
+    .teacher-card{
+        width:90%;
+        margin-bottom:20px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+.teacher-btn{
+
+    display:inline-block;
+    margin-top:30px;
+    background:#2196f3;
+    color:white;
+    padding:12px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    }
+    }
+
+/* ===== Pricing Page ===== */
+
+.pricing{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    background:#f8fbff;
+
+}
+
+
+.pricing h2{
+
+    color:#2196f3;
+
+    margin-bottom:40px;
+
+}
+
+
+.pricing-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.price-card{
+
+    background:#e3f2fd;
+
+    width:280px;
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+    border:2px solid #90caf9;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+.price-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.price-card h3{
+
+    color:#1565c0;
+
+    margin-bottom:15px;
+
+}
+
+
+.price-card h4{
+
+    color:#d4af37;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+.price-card p{
+
+    color:#555;
+
+    margin:10px 0;
+
+}
+
+
+.price-card a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#2196f3;
+
+    color:white;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+}
+
+
+.price-card a:hover{
+
+    background:#00897b;
+
+}
+
+
+.featured{
+
+    background:#fff3cd;
+
+    border-color:#d4af37;
+
+}
+
+
+.featured span{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#00897b;
+
+    font-weight:bold;
+
+}
+/* ===== Special Offer ===== */
+
+.special-offer{
+
+    background:#fff3cd;
+
+    border:2px solid #d4af37;
+
+    color:#1565c0;
+
+    max-width:600px;
+
+    margin:0 auto 40px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+.special-offer p{
+
+    font-size:16px;
+
+    color:#555;
+
+    margin-top:10px;
+
+    font-weight:normal;
+
+}
+/* ===== Teachers Preview ===== */
+
+.teachers-preview{
+
+    padding:50px 20px;
+
+    text-align:center;
+
+}
+
+
+.preview-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.preview-card{
+
+    width:220px;
+
+    background:#e3f2fd;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+border:3px solid #90caf9;
+}
+
+
+.preview-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.preview-card img{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+
+}
+
+
+.preview-card h3{
+
+    color:#1565c0;
+
+    font-size:18px;
+
+}
+
+
+.preview-card p{
+
+    color:#555;
+
+    font-size:14px;
+
+}
+/* ===== Teachers Button ===== */
+
+.teachers-btn{
+
+    display:inline-block;
+
+    background:#2196f3;
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+
+.teachers-btn:hover{
+
+    background:#00897b;
+
+    transform:translateY(-3px);
+}
+
+.teachers-btn{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+@media (max-width:768px){
+
+    .course-container{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        width:100%;
+    }
+
+    .course-card{
+        width:90% !important;
+        max-width:350px;
+    }
+
+}
+@media (max-width:768px){
+
+    .course-container{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+    }
+
+    .course-card{
+        width:90% !important;
+        max-width:350px;
+    }
+
+
+    .courses{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        justify-content:center;
+    }
+
+    .course{
+        width:90%;
+        margin:auto;
+    }
+
+}
+.how-it-works{
+    width:100%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.step{
+    margin-left:auto;
+    margin-right:auto;
+}

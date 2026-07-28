@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Al Shaimaa Quran Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<img src="images/logo.png" alt="Logo">
+
+<h1>Free Trial Registration</h1>
+
+<p>Start your Quran learning journey with us</p>
+
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="courses.html">Courses</a>
+<a href="teachers.html">Teachers</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+
+<section class="register-section">
+
+
+<h2>Book Your Free Trial</h2>
+
+
+<form>
+
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+
+<input type="tel" id="phone" placeholder="WhatsApp Number" required>
+
+
+
+<select id="course">
+
+<option>Select Course</option>
+
+<option>Quran Memorization</option>
+
+<option>Tajweed Course</option>
+
+<option>Arabic Language</option>
+
+<option>Islamic Studies</option>
+
+</select>
+
+
+
+<textarea id="message" placeholder="Message"></textarea>
+
+
+
+<script>
+
+function sendToWhatsApp(){
+
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let phone = document.getElementById("phone").value;
+let course = document.getElementById("course").value;
+let message = document.getElementById("message").value;
+
+
+let text =
+"New Registration - Al Shaimaa Quran Academy\n\n" +
+"Name: " + name + "\n" +
+"Email: " + email + "\n" +
+"WhatsApp: " + phone + "\n" +
+"Course: " + course + "\n" +
+"Message: " + message;
+
+
+window.open(
+"https://wa.me/201027791837?text=" + encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+</script>
+<button type="button" onclick="sendToWhatsApp()">
+    Submit Registration
+</button>
+</form>
+
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Al Shaimaa Quran Academy</p>
+
+</footer>
+
+
+
+<script>
+
+function sendToWhatsApp(){
+
+let name = document.getElementById("name").value;
+
+let email = document.getElementById("email").value;
+
+let phone = document.getElementById("phone").value;
+
+let course = document.getElementById("course").value;
+
+let message = document.getElementById("message").value;
+
+
+
+let text =
+"New Registration - Al Shaimaa Quran Academy\n\n" +
+"Name: " + name + "\n" +
+"Email: " + email + "\n" +
+"WhatsApp: " + phone + "\n" +
+"Course: " + course + "\n" +
+"Message: " + message;
+
+
+
+let url = "https://wa.me/201027791837?text=" + encodeURIComponent(text);
+
+
+window.open(url, "_blank");
+
+
+}
+
+</script>
+
+<a href="https://wa.me/201027791837"
+class="whatsapp-float"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+<a href="#" class="back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+</body>
+
+</html>
