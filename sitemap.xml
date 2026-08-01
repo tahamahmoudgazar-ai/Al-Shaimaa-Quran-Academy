@@ -3,27 +3,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://alshaimaaquranacademy.netlify.app/</loc>
+<loc>https://alshimaaquranacademy.com/</loc>
 </url>
 
 <url>
-<loc>https://alshaimaaquranacademy.netlify.app/about.html</loc>
+<loc>https://alshimaaquranacademy.com/about.html</loc>
 </url>
 
 <url>
-<loc>https://alshaimaaquranacademy.netlify.app/courses.html</loc>
+<loc>https://alshimaaquranacademy.com/courses.html</loc>
 </url>
 
 <url>
-<loc>https://alshaimaaquranacademy.netlify.app/teachers.html</loc>
+<loc>https://alshimaaquranacademy.com/teachers.html</loc>
 </url>
 
 <url>
-<loc>https://alshaimaaquranacademy.netlify.app/pricing.html</loc>
+<loc>https://alshimaaquranacademy.com/pricing.html</loc>
 </url>
 
 <url>
-<loc>https://alshaimaaquranacademy.netlify.app/contact.html</loc>
+<loc>https://alshimaaquranacademy.com/contact.html</loc>
+</url>
+
+<url>
+<loc>https://alshimaaquranacademy.com/register.html</loc>
 </url>
 
 </urlset>
