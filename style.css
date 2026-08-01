@@ -1466,9 +1466,12 @@ border:3px solid #90caf9;
 }
 
 .video-section video {
+    display: block;
     width: 100%;
     max-width: 800px;
     height: auto;
+    object-fit: contain;
+    margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
