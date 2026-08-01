@@ -1,104 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Register - Al Shaimaa Quran Academy</title>
+    <title>Free Trial Registration | Al Shaimaa Quran Academy</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
-
 
 <body>
 
-
 <header>
 
-<img src="images/logo.png" alt="Logo">
+    <img src="images/logo.png" alt="Logo">
 
-<h1>Free Trial Registration</h1>
+    <h1>Free Trial Registration</h1>
 
-<p>Start your Quran learning journey with us</p>
+    <p>Start your Quran learning journey with us</p>
 
-
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="courses.html">Courses</a>
-<a href="teachers.html">Teachers</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 </header>
 
-
-
 <section class="register-section">
 
+    <h2>Book Your Free Trial Class</h2>
 
-<h2>Book Your Free Trial</h2>
+    <form>
 
+        <input type="text"
+               id="name"
+               placeholder="Full Name"
+               required>
 
-<form>
+        <select id="timezone" required>
+            <option value="" selected disabled>Select Time Zone</option>
+            <option>Eastern Time (ET)</option>
+            <option>Central Time (CT)</option>
+            <option>Mountain Time (MT)</option>
+            <option>Pacific Time (PT)</option>
+            <option>Greenwich Mean Time (GMT)</option>
+            <option>British Time (BST)</option>
+            <option>Central European Time (CET)</option>
+            <option>Gulf Standard Time (GST)</option>
+            <option>Arabia Standard Time (AST)</option>
+            <option>Other</option>
+        </select>
 
+        <input type="text"
+               id="country"
+               placeholder="Country"
+               required>
 
-<input type="text" id="name" placeholder="Full Name" required>
+        <select id="course" required>
 
+            <option value="" selected disabled>Select Course</option>
 
-<input type="email" id="email" placeholder="Email Address" required>
+            <option>Quran Reading</option>
 
+            <option>Quran Memorization</option>
 
-<input type="tel" id="phone" placeholder="WhatsApp Number" required>
+            <option>Tajweed Course</option>
 
+            <option>Quran Recitation</option>
 
+            <option>Quranic Arabic</option>
 
-<select id="course">
+            <option>Islamic Studies</option>
 
-<option>Select Course</option>
+            <option>Separate 1-to-1 Adult Quran Coaching</option>
 
-<option>Quran Memorization</option>
+            <option>Kids Quran Course</option>
 
-<option>Tajweed Course</option>
+        </select>
 
-<option>Arabic Language</option>
+        <input type="text"
+               id="available"
+               placeholder="Available Days & Times">
 
-<option>Islamic Studies</option>
+        <input type="number"
+               id="age"
+               placeholder="Student Age">
 
-</select>
+        <select id="studentGender">
 
+            <option value="" selected disabled>Student Gender</option>
 
+            <option>Male</option>
 
-<textarea id="message" placeholder="Message"></textarea>
+            <option>Female</option>
 
+        </select>
 
+        <select id="teacherGender">
+
+            <option value="" selected disabled>Preferred Teacher Gender</option>
+
+            <option>Male</option>
+
+            <option>Female</option>
+
+            <option>No Preference</option>
+
+        </select>
+
+        <input type="email"
+               id="email"
+               placeholder="Email Address"
+               required>
+
+        <input type="tel"
+               id="phone"
+               placeholder="WhatsApp Number"
+               required>
+
+        <textarea id="message"
+                  rows="6"
+                  placeholder="Write your message here..."></textarea>
+
+        <button type="button"
+                onclick="sendToWhatsApp()">
+            Submit Registration
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Al Shaimaa Quran Academy. All Rights Reserved.</p>
+
+</footer>
+
+<a href="https://wa.me/201027791837"
+   class="whatsapp-float"
+   target="_blank">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="#"
+   class="back-to-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</a>
 
 <script>
 
 function sendToWhatsApp(){
 
 let name = document.getElementById("name").value;
+let timezone = document.getElementById("timezone").value;
+let country = document.getElementById("country").value;
+let course = document.getElementById("course").value;
+let available = document.getElementById("available").value;
+let age = document.getElementById("age").value;
+let studentGender = document.getElementById("studentGender").value;
+let teacherGender = document.getElementById("teacherGender").value;
 let email = document.getElementById("email").value;
 let phone = document.getElementById("phone").value;
-let course = document.getElementById("course").value;
 let message = document.getElementById("message").value;
 
-
 let text =
-"New Registration - Al Shaimaa Quran Academy\n\n" +
-"Name: " + name + "\n" +
-"Email: " + email + "\n" +
-"WhatsApp: " + phone + "\n" +
-"Course: " + course + "\n" +
-"Message: " + message;
-
+"📚 New Free Trial Registration\n\n" +
+"Name: " + name + "\n\n" +
+"Time Zone: " + timezone + "\n\n" +
+"Country: " + country + "\n\n" +
+"Course: " + course + "\n\n" +
+"Available Times: " + available + "\n\n" +
+"Student Age: " + age + "\n\n" +
+"Student Gender: " + studentGender + "\n\n" +
+"Preferred Teacher Gender: " + teacherGender + "\n\n" +
+"Email: " + email + "\n\n" +
+"WhatsApp: " + phone + "\n\n" +
+"Message:\n" + message;
 
 window.open(
 "https://wa.me/201027791837?text=" + encodeURIComponent(text),
@@ -108,70 +195,6 @@ window.open(
 }
 
 </script>
-<button type="button" onclick="sendToWhatsApp()">
-    Submit Registration
-</button>
-</form>
 
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 Al Shaimaa Quran Academy</p>
-
-</footer>
-
-
-
-<script>
-
-function sendToWhatsApp(){
-
-let name = document.getElementById("name").value;
-
-let email = document.getElementById("email").value;
-
-let phone = document.getElementById("phone").value;
-
-let course = document.getElementById("course").value;
-
-let message = document.getElementById("message").value;
-
-
-
-let text =
-"New Registration - Al Shaimaa Quran Academy\n\n" +
-"Name: " + name + "\n" +
-"Email: " + email + "\n" +
-"WhatsApp: " + phone + "\n" +
-"Course: " + course + "\n" +
-"Message: " + message;
-
-
-
-let url = "https://wa.me/201027791837?text=" + encodeURIComponent(text);
-
-
-window.open(url, "_blank");
-
-
-}
-
-</script>
-
-<a href="https://wa.me/201027791837"
-class="whatsapp-float"
-target="_blank">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-</a>
-<a href="#" class="back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-</a>
 </body>
-
 </html>
