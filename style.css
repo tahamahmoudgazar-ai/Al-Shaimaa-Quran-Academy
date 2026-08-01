@@ -1677,6 +1677,13 @@ border:3px solid #90caf9;
     visibility:visible;
 
 }
+.side-menu{
+    background: rgba(255,255,255,0.05) !important;
+}
+
+.side-menu a{
+    color:white !important;
+}
 
 
 
