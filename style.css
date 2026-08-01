@@ -1514,3 +1514,48 @@ border:3px solid #90caf9;
 .video-section a:hover {
     opacity: 0.8;
 }
+/* ===== Side Menu ===== */
+
+.menu-toggle{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    background: #2196f3;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.side-menu{
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background: #0d47a1;
+    padding-top: 80px;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.side-menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.side-menu a:hover{
+    background: #1565c0;
+}
+
+.side-menu.active{
+    left: 0;
+}
