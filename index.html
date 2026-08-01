@@ -452,6 +452,12 @@ const sideMenu = document.querySelector(".side-menu");
 menuBtn.addEventListener("click", () => {
     sideMenu.classList.toggle("active");
 });
+
+document.querySelectorAll(".side-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        sideMenu.classList.remove("active");
+    });
+});
 </script>
 </body>
 
