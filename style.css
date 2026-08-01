@@ -1468,16 +1468,9 @@ border:3px solid #90caf9;
 .video-section video {
     width: 100%;
     max-width: 800px;
-    height: 450px;
-    object-fit: cover;
+    height: auto;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-}
-
-@media (max-width: 600px) {
-    .video-section video {
-        height: 220px;
-    }
 }
 
 .video-section p {
