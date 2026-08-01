@@ -1545,7 +1545,6 @@ border:3px solid #90caf9;
 
 }
 
-
 /* ===== Side Menu ===== */
 
 .side-menu{
@@ -1562,7 +1561,7 @@ border:3px solid #90caf9;
 
 
     background:
-    rgba(13,71,161,0.30);
+    rgba(255,255,255,0.12);
 
 
     backdrop-filter:blur(20px);
@@ -1571,7 +1570,7 @@ border:3px solid #90caf9;
 
 
     border-right:
-    1px solid rgba(255,255,255,.25);
+    1px solid rgba(255,255,255,.3);
 
 
     padding-top:80px;
@@ -1584,7 +1583,7 @@ border:3px solid #90caf9;
 
 
     box-shadow:
-    5px 0 25px rgba(0,0,0,.25);
+    5px 0 25px rgba(0,0,0,.15);
 
 }
 
@@ -1624,7 +1623,7 @@ border:3px solid #90caf9;
 .side-menu a:hover{
 
     background:
-    rgba(255,255,255,.18);
+    rgba(255,255,255,.20);
 
 
     padding-left:35px;
@@ -1649,12 +1648,12 @@ border:3px solid #90caf9;
 
 
     background:
-    rgba(0,0,0,.25);
+    rgba(0,0,0,.12);
 
 
-    backdrop-filter:blur(3px);
+    backdrop-filter:blur(2px);
 
-    -webkit-backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(2px);
 
 
     opacity:0;
@@ -1678,3 +1677,6 @@ border:3px solid #90caf9;
     visibility:visible;
 
 }
+
+
+
