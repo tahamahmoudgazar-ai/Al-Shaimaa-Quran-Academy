@@ -1514,78 +1514,90 @@ border:3px solid #90caf9;
 .video-section a:hover {
     opacity: 0.8;
 }
-/* ===== Side Menu Button ===== */
+/* ===== Menu Button ===== */
 
 .menu-toggle{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1100;
-    background: #2196f3;
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 22px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,.35);
-    transition: .3s;
+
+    position:fixed;
+
+    top:20px;
+    left:20px;
+
+    z-index:1100;
+
+    background:#2196f3;
+
+    color:white;
+
+    border:none;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+
 }
 
-.menu-toggle:hover{
-    transform: scale(1.08);
-}
 
 
 /* ===== Side Menu ===== */
 
 .side-menu{
 
-    position: fixed;
-    top: 0;
-    left: -270px;
+    position:fixed;
 
-    width: 250px;
-    height: 100vh;
+    top:0;
+
+    left:-270px;
+
+    width:250px;
+
+    height:100vh;
+
 
     background:
-    linear-gradient(
-        135deg,
-        rgba(13,71,161,.85),
-        rgba(33,150,243,.75)
-    );
+    rgba(13,71,161,0.75);
 
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
 
-    border-right: 1px solid rgba(255,255,255,.25);
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+
+    padding-top:80px;
+
+
+    transition:.35s ease;
+
+
+    z-index:1050;
+
 
     box-shadow:
-    5px 0 25px rgba(0,0,0,.25);
+    5px 0 25px rgba(0,0,0,.3);
 
-    padding-top: 90px;
-
-    transition:
-    left .35s ease;
-
-    z-index: 1050;
 }
 
 
-/* Open Menu */
 
 .side-menu.active{
+
     left:0;
+
 }
 
 
-/* Menu Links */
 
 .side-menu a{
 
-    display:flex;
-    align-items:center;
+    display:block;
 
     color:white;
 
@@ -1595,45 +1607,66 @@ border:3px solid #90caf9;
 
     font-size:18px;
 
+    border-bottom:
+    1px solid rgba(255,255,255,.15);
+
     transition:.3s;
 
-    border-bottom:
-    1px solid rgba(255,255,255,.12);
 }
+
 
 
 .side-menu a:hover{
 
     background:
-    rgba(255,255,255,.18);
+    rgba(255,255,255,.2);
 
     padding-left:35px;
+
 }
 
 
-/* Background Overlay */
+
+/* ===== Overlay ===== */
+
 
 .menu-overlay{
 
     position:fixed;
 
     top:0;
+
     left:0;
 
     width:100%;
+
     height:100%;
 
-    background:
-    rgba(0,0,0,.35);
 
-    backdrop-filter:blur(3px);
+    background:
+    rgba(0,0,0,.45);
+
 
     opacity:0;
+
     visibility:hidden;
+
 
     transition:.3s;
 
+
     z-index:1040;
+
+}
+
+
+
+.menu-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
 }
 
 
