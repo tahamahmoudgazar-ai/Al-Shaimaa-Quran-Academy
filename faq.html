@@ -27,11 +27,22 @@ href="https://alshimaaquranacademy.com/faq.html">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 <style>
+
+/* ===== FAQ ===== */
+
 .faq-section{
 max-width:900px;
 margin:60px auto;
 padding:20px;
+}
+
+.faq-section h2{
+text-align:center;
+margin-bottom:30px;
+color:#2196f3;
 }
 
 .faq-item{
@@ -39,17 +50,27 @@ margin-bottom:15px;
 border:1px solid #ddd;
 border-radius:10px;
 overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
 }
 
 .faq-question{
 width:100%;
-padding:18px;
+padding:18px 20px;
 background:#2196f3;
 color:#fff;
 border:none;
 font-size:18px;
+font-weight:bold;
 cursor:pointer;
 text-align:left;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.faq-question i{
+transition:transform .3s ease;
 }
 
 .faq-answer{
@@ -62,11 +83,16 @@ background:#fff;
 .faq-answer p{
 padding:20px;
 margin:0;
+line-height:1.8;
 }
+
 </style>
+
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -86,20 +112,25 @@ margin:0;
 
 </section>
 
+
 <img src="images/logo.png"
 alt="Al Shaimaa Quran Academy Logo">
+
 
 <h1>
 Frequently Asked Questions
 </h1>
 
+
 <p>
 Everything You Need To Know About Our Online Quran Academy
 </p>
 
+
 <button class="menu-toggle">
 <i class="fa-solid fa-bars"></i>
 </button>
+
 
 <div class="side-menu">
 
@@ -113,6 +144,7 @@ Everything You Need To Know About Our Online Quran Academy
 
 </div>
 
+
 <nav class="navbar">
 
 <a href="index.html">Home</a>
@@ -125,16 +157,24 @@ Everything You Need To Know About Our Online Quran Academy
 
 </nav>
 
+
 </header>
+
+
 
 <section class="faq-section">
 
-<h2>Frequently Asked Questions</h2>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
 
 <div class="faq-item">
 
 <button class="faq-question">
-Do you offer a free trial lesson?
+<span>Do you offer a free trial lesson?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
@@ -147,10 +187,13 @@ Yes. We offer a completely free trial lesson so you can meet your teacher and ex
 
 </div>
 
+
+
 <div class="faq-item">
 
 <button class="faq-question">
-Who are your teachers?
+<span>Who are your teachers?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
@@ -163,10 +206,13 @@ Our teachers are qualified male and female Quran instructors with experience in 
 
 </div>
 
+
+
 <div class="faq-item">
 
 <button class="faq-question">
-What courses do you offer?
+<span>What courses do you offer?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
@@ -182,7 +228,8 @@ We offer Quran Reading, Quran Memorization, Tajweed, Arabic Language and Islamic
 <div class="faq-item">
 
 <button class="faq-question">
-Do you teach children?
+<span>Do you teach children?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
@@ -195,10 +242,12 @@ Yes. We provide engaging one-to-one Quran classes specially designed for childre
 
 </div>
 
+
 <div class="faq-item">
 
 <button class="faq-question">
-Can adults join your classes?
+<span>Can adults join your classes?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
@@ -211,10 +260,12 @@ Absolutely. We teach adults from beginner to advanced levels with flexible sched
 
 </div>
 
+
 <div class="faq-item">
 
 <button class="faq-question">
-Are all classes private?
+<span>Are all classes private?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
@@ -226,16 +277,21 @@ Yes. All lessons are one-to-one private sessions to ensure the best learning exp
 </div>
 
 </div>
+
+
 <div class="faq-item">
 
 <button class="faq-question">
-Which countries do you teach?
+<span>Which countries do you teach?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
+
 <p>
 We provide online Quran classes for students in the USA, UK, Canada, Australia, Europe and many other countries around the world.
 </p>
+
 </div>
 
 </div>
@@ -244,13 +300,16 @@ We provide online Quran classes for students in the USA, UK, Canada, Australia, 
 <div class="faq-item">
 
 <button class="faq-question">
-Which platform do you use for classes?
+<span>Which platform do you use for classes?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
+
 <p>
 We teach through Zoom, Google Meet and other reliable online platforms according to the student's preference.
 </p>
+
 </div>
 
 </div>
@@ -259,13 +318,16 @@ We teach through Zoom, Google Meet and other reliable online platforms according
 <div class="faq-item">
 
 <button class="faq-question">
-How long is each lesson?
+<span>How long is each lesson?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
+
 <p>
 Lessons usually last between 30 and 60 minutes depending on the student's age and learning goals.
 </p>
+
 </div>
 
 </div>
@@ -274,13 +336,16 @@ Lessons usually last between 30 and 60 minutes depending on the student's age an
 <div class="faq-item">
 
 <button class="faq-question">
-Can I choose a male or female teacher?
+<span>Can I choose a male or female teacher?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
+
 <p>
 Yes. Students can choose either a qualified male or female teacher according to their preference.
 </p>
+
 </div>
 
 </div>
@@ -289,13 +354,16 @@ Yes. Students can choose either a qualified male or female teacher according to 
 <div class="faq-item">
 
 <button class="faq-question">
-How do I register?
+<span>How do I register?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
+
 <p>
 Simply complete the registration form on our website and our team will contact you shortly to arrange your free trial lesson.
 </p>
+
 </div>
 
 </div>
@@ -304,79 +372,137 @@ Simply complete the registration form on our website and our team will contact y
 <div class="faq-item">
 
 <button class="faq-question">
-How can I pay?
+<span>How can I pay?</span>
+<i class="fa-solid fa-chevron-down"></i>
 </button>
 
 <div class="faq-answer">
+
 <p>
 We provide secure payment options for international students. Payment details will be shared after registration.
 </p>
+
 </div>
 
 </div>
+
 
 </section>
 
 
+
 <footer>
 
-<h3>Follow Us</h3>
+<h3>
+Follow Us
+</h3>
+
 
 <div class="social-icons">
+
 
 <a href="https://www.facebook.com/share/18JmVpPa9s/" target="_blank">
 <i class="fa-brands fa-facebook-f"></i>
 </a>
+
 
 <a href="https://www.instagram.com/shimaamahmoudzaki1234?igsh=b29tYXFodWRqeWl2"
 target="_blank">
 <i class="fa-brands fa-instagram"></i>
 </a>
 
+
 </div>
+
 
 <p>
 © 2026 Al Shaimaa Quran Academy
 </p>
 
+
 </footer>
+
+
 
 <div class="menu-overlay"></div>
 
+
+
 <script>
+
+
 const menuBtn = document.querySelector(".menu-toggle");
 const sideMenu = document.querySelector(".side-menu");
 const overlay = document.querySelector(".menu-overlay");
 
+
 menuBtn.addEventListener("click", () => {
-    sideMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
+
+sideMenu.classList.toggle("active");
+overlay.classList.toggle("active");
+
 });
+
 
 overlay.addEventListener("click", () => {
-    sideMenu.classList.remove("active");
-    overlay.classList.remove("active");
+
+sideMenu.classList.remove("active");
+overlay.classList.remove("active");
+
 });
+
 
 document.querySelectorAll(".side-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-        sideMenu.classList.remove("active");
-        overlay.classList.remove("active");
-    });
+
+link.addEventListener("click", () => {
+
+sideMenu.classList.remove("active");
+overlay.classList.remove("active");
+
 });
+
+});
+
+
+
+// ===== FAQ Accordion =====
 
 document.querySelectorAll(".faq-question").forEach(question => {
-    question.addEventListener("click", () => {
-        const answer = question.nextElementSibling;
 
-        if (answer.style.maxHeight) {
-            answer.style.maxHeight = null;
-        } else {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-        }
-    });
+
+question.addEventListener("click", () => {
+
+
+const answer = question.nextElementSibling;
+const icon = question.querySelector("i");
+
+
+if(answer.style.maxHeight){
+
+
+answer.style.maxHeight = null;
+icon.style.transform = "rotate(0deg)";
+
+
+}else{
+
+
+answer.style.maxHeight = answer.scrollHeight + "px";
+icon.style.transform = "rotate(180deg)";
+
+
+}
+
+
 });
+
+
+});
+
+
 </script>
 
+
 </body>
+
 </html>
