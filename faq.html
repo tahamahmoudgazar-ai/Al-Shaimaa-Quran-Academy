@@ -464,38 +464,50 @@ overlay.classList.remove("active");
 });
 
 
-
 // ===== FAQ Accordion =====
 
 document.querySelectorAll(".faq-question").forEach(question => {
 
+    question.addEventListener("click", () => {
 
-question.addEventListener("click", () => {
-
-
-const answer = question.nextElementSibling;
-const icon = question.querySelector("i");
+        const currentAnswer = question.nextElementSibling;
+        const currentIcon = question.querySelector("i");
 
 
-if(answer.style.maxHeight){
+        document.querySelectorAll(".faq-answer").forEach(answer => {
+
+            if(answer !== currentAnswer){
+                answer.style.maxHeight = null;
+            }
+
+        });
 
 
-answer.style.maxHeight = null;
-icon.style.transform = "rotate(0deg)";
+        document.querySelectorAll(".faq-question i").forEach(icon => {
+
+            if(icon !== currentIcon){
+                icon.style.transform = "rotate(0deg)";
+            }
+
+        });
 
 
-}else{
+        if(currentAnswer.style.maxHeight){
 
+            currentAnswer.style.maxHeight = null;
+            currentIcon.style.transform = "rotate(0deg)";
 
-answer.style.maxHeight = answer.scrollHeight + "px";
-icon.style.transform = "rotate(180deg)";
+        } else {
 
+            currentAnswer.style.maxHeight =
+            currentAnswer.scrollHeight + "px";
 
-}
+            currentIcon.style.transform =
+            "rotate(180deg)";
 
+        }
 
-});
-
+    });
 
 });
 
