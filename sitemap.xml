@@ -2,35 +2,44 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://alshimaaquranacademy.com/</loc>
-</url>
-
-<url>
-<loc>https://alshimaaquranacademy.com/about.html</loc>
-</url>
-
-<url>
-<loc>https://alshimaaquranacademy.com/courses.html</loc>
-</url>
-
-<url>
-<loc>https://alshimaaquranacademy.com/teachers.html</loc>
-</url>
-
-<url>
-<loc>https://alshimaaquranacademy.com/pricing.html</loc>
-</url>
-
-<url>
-<loc>https://alshimaaquranacademy.com/contact.html</loc>
-</url>
-
-<url>
-<loc>https://alshimaaquranacademy.com/register.html</loc>
-</url>
   <url>
-<loc>https://alshimaaquranacademy.com/introduction-video.html</loc>
-</url>
+    <loc>https://alshimaaquranacademy.com/</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/about.html</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/courses.html</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/teachers.html</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/pricing.html</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/contact.html</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/register.html</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/introduction-video.html</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
 
 </urlset>
