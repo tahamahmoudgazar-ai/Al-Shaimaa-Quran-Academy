@@ -261,25 +261,27 @@ Book Your Free Trial
 
 const videos = document.querySelectorAll("video");
 
-
 videos.forEach(video => {
 
-video.addEventListener("play", function(){
+    video.playbackRate = 1;
 
-videos.forEach(otherVideo => {
+    video.addEventListener("play", function(){
 
-if(otherVideo !== video){
+        video.playbackRate = 1;
 
-otherVideo.pause();
+        videos.forEach(other => {
 
-}
+            if(other !== video){
+
+                other.pause();
+
+            }
+
+        });
+
+    });
 
 });
-
-});
-
-});
-
 
 </script>
 
