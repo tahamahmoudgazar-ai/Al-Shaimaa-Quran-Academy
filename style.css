@@ -1861,3 +1861,20 @@ border:3px solid #90caf9;
 .cta .btn {
     display: inline-block;
 }
+.video-card {
+    text-align: center !important;
+}
+
+.video-card a.btn {
+    display: block !important;
+    width: fit-content;
+    margin: 20px auto !important;
+}
+
+
+.hero-content a.btn,
+.cta a.btn {
+    display: block !important;
+    width: fit-content;
+    margin: 20px auto !important;
+}
