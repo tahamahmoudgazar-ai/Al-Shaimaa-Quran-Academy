@@ -1843,3 +1843,21 @@ border:3px solid #90caf9;
     }
 
 }
+.video-card {
+    text-align: center;
+}
+
+.video-card .btn {
+    display: inline-block;
+    margin: 15px auto;
+}
+
+.hero-content,
+.cta {
+    text-align: center;
+}
+
+.hero-content .btn,
+.cta .btn {
+    display: inline-block;
+}
