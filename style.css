@@ -1905,13 +1905,21 @@ img {
     margin: 30px auto;
 }
 
+.video-box {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
 .video-box video {
     width: 100%;
+    max-width: 1000px;
     height: auto;
-    max-height: 450px;
+    max-height: 650px;
     object-fit: contain;
     display: block;
+    margin: auto;
     border-radius: 15px;
+    background: #000;
 }
 .home-video {
     padding: 60px 20px;
