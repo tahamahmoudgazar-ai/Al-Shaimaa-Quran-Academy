@@ -1910,16 +1910,19 @@ img {
     margin: 30px auto;
 }
 
+.video-box {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
 .video-box video {
     width: 100%;
-    max-width: 1000px;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain;
     display: block;
-    margin: auto;
     border-radius: 15px;
     background: #000;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 .home-video {
     padding: 60px 20px;
