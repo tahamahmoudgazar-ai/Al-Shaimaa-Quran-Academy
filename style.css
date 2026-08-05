@@ -1900,21 +1900,11 @@ img {
     height: 220px;
     object-fit: cover;
 }
-.video-box {
-    max-width: 1000px;
-    margin: 30px auto;
-}
-
 .video-box video {
     width: 100%;
-    max-width: 1000px;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain;
-    display: block;
-    margin: auto;
+    height: 450px;
+    object-fit: cover;
     border-radius: 15px;
-    background: #000;
 }
 
 .home-video {
