@@ -1901,29 +1901,22 @@ img {
     object-fit: cover;
 }
 .video-box {
-    max-width: 850px;
-    margin: 30px auto;
-}
-
-.video-box {
     max-width: 1000px;
-    margin: 30px auto;
-}
-
-.video-box {
-    width: 100%;
-    max-width: 850px;
     margin: 30px auto;
 }
 
 .video-box video {
     width: 100%;
+    max-width: 1000px;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
     display: block;
+    margin: auto;
     border-radius: 15px;
     background: #000;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
 }
+
 .home-video {
     padding: 60px 20px;
 }
@@ -1945,8 +1938,14 @@ img {
 
 .video-card video {
     width: 100%;
-    border-radius: 12px;
+    max-width: 1000px;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
     display: block;
+    margin: auto;
+    border-radius: 12px;
+    background: #000;
 }
 
 .video-card p {
