@@ -431,77 +431,22 @@ Meet Our Teachers
 
 <div class="preview-container">
 
-
-
 <a href="teachers.html" class="preview-card">
 
-
-<img src="images/teachers/Shimaa Mahmoud Zaki.png"
-alt="Shimaa Mahmoud Zaki Quran Teacher"
+<img id="teacherSlider"
+src="images/teachers/Shimaa Mahmoud Zaki.png"
+alt="Quran Teacher"
 loading="lazy">
 
-
-<h3>
+<h3 id="teacherName">
 Shimaa Mahmoud Zaki
 </h3>
 
-
-<p>
+<p id="teacherRole">
 Quran & Tajweed Teacher
 </p>
 
-
 </a>
-
-
-
-
-
-<a href="teachers.html" class="preview-card">
-
-
-<img src="images/teachers/Sheikh Taha Mahmud.png"
-alt="Sheikh Taha Mahmud Quran Teacher"
-loading="lazy">
-
-
-<h3>
-Sheikh Taha Mahmud
-</h3>
-
-
-<p>
-Quran, Arabic & Islamic Studies Teacher
-</p>
-
-
-</a>
-
-
-
-
-
-<a href="teachers.html" class="preview-card">
-
-
-<img src="images/teachers/Hagar Alaa.png"
-alt="Hagar Alaa Quran Arabic Teacher"
-loading="lazy">
-
-
-<h3>
-Hagar Alaa
-</h3>
-
-
-<p>
-Quran & Arabic Teacher
-</p>
-
-
-</a>
-
-
 
 </div>
 
@@ -1048,7 +993,80 @@ overlay.classList.remove("active");
 </script>
 
 
+<script>
 
+const teachers = [
+
+{
+image: "images/teachers/Shimaa Mahmoud Zaki.png",
+name: "Shimaa Mahmoud Zaki",
+role: "Quran & Tajweed Teacher"
+},
+
+{
+image: "images/teachers/Sheikh Abdulrahman Ahmed.png",
+name: "Sheikh Abdulrahman Ahmed",
+role: "Quran & Tajweed Teacher"
+},
+
+{
+image: "images/teachers/Eman khalifa.png",
+name: "Eman Khalifa",
+role: "Quran, Arabic & Islamic Studies Teacher"
+},
+
+{
+image: "images/teachers/Sheikh Mohamed.png",
+name: "Sheikh Mohamed",
+role: "Quran, Arabic & Islamic Studies Teacher"
+},
+
+{
+image: "images/teachers/Hagar Alaa.png",
+name: "Hagar Alaa",
+role: "Quran & Arabic Teacher"
+},
+
+{
+image: "images/teachers/Teacher Nadia.png",
+name: "Teacher Nadia",
+role: "Quran, Arabic & Islamic Studies Teacher"
+},
+
+{
+image: "images/teachers/Sheikh Taha Mahmud.png",
+name: "Sheikh Taha Mahmud",
+role: "Quran, Arabic & Islamic Studies Teacher"
+}
+
+];
+
+
+let teacherIndex = 0;
+
+
+setInterval(() => {
+
+teacherIndex++;
+
+if(teacherIndex >= teachers.length){
+
+teacherIndex = 0;
+
+}
+
+
+document.getElementById("teacherSlider").src = teachers[teacherIndex].image;
+
+document.getElementById("teacherName").textContent = teachers[teacherIndex].name;
+
+document.getElementById("teacherRole").textContent = teachers[teacherIndex].role;
+
+
+}, 3000);
+
+
+</script>
 </body>
 
 </html>
