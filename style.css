@@ -1171,4 +1171,57 @@ h2 {
     line-height: 1.8;
 }
 
-/* =
+header {
+    background-color: #6ec6ff;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: right;
+}
+
+.header-container .logo-link img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header-container .logo-text h2 {
+    font-size: 18px;
+    color: #0d47a1;
+    margin: 0;
+}
+
+.header-container .logo-text p {
+    font-size: 12px;
+    color: #37474f;
+    margin: 0;
+}
+
+.header-container .menu-toggle {
+    background: transparent;
+    border: none;
+    color: #0d47a1;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: none;
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.navbar {
+    display: none;
+}
