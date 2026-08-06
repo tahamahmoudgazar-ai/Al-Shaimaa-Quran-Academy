@@ -1300,12 +1300,113 @@ color:#00897b;
 
     justify-content:center;
 
-    gap:25px;
-
-    flex-wrap:wrap;
+    align-items:center;
 
 }
 
+
+.preview-card{
+
+    width:260px;
+
+    background:#e3f2fd;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    border:3px solid #90caf9;
+
+    overflow:hidden;
+
+}
+
+
+.slide-out{
+
+    animation: slideOut 0.5s forwards;
+
+}
+
+
+.slide-in{
+
+    animation: slideIn 0.5s forwards;
+
+}
+
+
+@keyframes slideOut{
+
+    from{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+        transform:translateX(-100px);
+
+    }
+
+}
+
+
+
+@keyframes slideIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(100px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+.preview-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.preview-card img{
+
+    width:140px;
+
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+
+}
 
 .preview-card{
 
@@ -1900,7 +2001,6 @@ img {
     height: 220px;
     object-fit: cover;
 }
-
 .video-box video {
     width: 100%;
     height: 450px;
@@ -1909,13 +2009,21 @@ img {
 }
 
 @media (min-width: 769px) {
-    .video-box video {
-        height: auto;
-        max-height: 700px;
-        object-fit: contain;
-        background: #000;
+
+    .video-box {
+        width: 300px;
+        margin: 30px auto;
     }
+
+    .video-box video {
+        width: 300px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+
 }
+
 
 .home-video {
     padding: 60px 20px;
@@ -1952,4 +2060,8 @@ img {
     margin-top: 15px;
     color: #555;
     line-height: 1.6;
+}
+.logo-link{
+    text-decoration:none;
+    display:inline-block;
 }
