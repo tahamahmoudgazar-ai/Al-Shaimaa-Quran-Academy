@@ -1045,9 +1045,22 @@ role: "Quran, Arabic & Islamic Studies Teacher"
 let teacherIndex = 0;
 
 
+const card = document.querySelector(".preview-card");
+
+
 setInterval(() => {
 
+
+card.classList.remove("slide-in");
+
+card.classList.add("slide-out");
+
+
+setTimeout(() => {
+
+
 teacherIndex++;
+
 
 if(teacherIndex >= teachers.length){
 
@@ -1063,8 +1076,15 @@ document.getElementById("teacherName").textContent = teachers[teacherIndex].name
 document.getElementById("teacherRole").textContent = teachers[teacherIndex].role;
 
 
-}, 3000);
+card.classList.remove("slide-out");
 
+card.classList.add("slide-in");
+
+
+},500);
+
+
+},5000);
 
 </script>
 </body>
