@@ -1909,9 +1909,13 @@ img {
 }
 
 @media (min-width: 769px) {
+    .video-box {
+        max-width: 520px;
+        margin: 30px auto;
+    }
+
     .video-box video {
         height: auto;
-        max-height: 700px;
         object-fit: contain;
         background: #000;
     }
