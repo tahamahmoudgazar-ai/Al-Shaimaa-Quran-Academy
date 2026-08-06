@@ -1276,9 +1276,8 @@ footer p {
         font-size: 24px;
     }
 }
-.hero .btn,
-.cta .btn {
+.btn {
     display: block;
     width: fit-content;
-    margin: 20px auto !important;
+    margin: 20px auto;
 }
