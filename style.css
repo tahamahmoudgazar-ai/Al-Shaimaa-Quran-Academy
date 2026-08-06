@@ -16,24 +16,24 @@ body {
 /* ===== Header ===== */
 
 header {
-background-color: #6ec6ff;
-color: white;
-text-align: center;
-padding: 30px 20px;
+    background-color: #6ec6ff;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
 }
 
 header img {
-width: 90px;
-height: 90px;
-border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
 }
 
 header h1{
-color:#0d47a1;
+    color:#0d47a1;
 }
 
 header p{
-color:#37474f;
+    color:#37474f;
 }
 
 
