@@ -1914,8 +1914,8 @@ img {
     }
 
     .video-box video {
-        height: auto;
-        object-fit: contain;
+        height: 320px;
+        object-fit: cover;
         background: #000;
     }
 }
