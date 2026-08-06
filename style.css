@@ -821,44 +821,40 @@ color:#00897b;
 
 
 /* ===== Top Banner ===== */
-
-.top-banner{
-    display:block;
-    width:100%;
-    background:#FFD54F;
-    color:#222;
-    text-decoration:none;
-    overflow:hidden;
-    white-space:nowrap;
-    padding:12px 0;
-}
-.banner-track{
-
-    display:inline-block;
-    padding-left:100%;
-    animation:bannerMove 18s linear infinite;
-    font-size:18px;
-    font-weight:bold;
-
+.top-banner {
+    position: relative;
+    width: 100%;
+    background: #FFD54F;
+    color: #222;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 0;
+    box-sizing: border-box;
 }
 
-@keyframes bannerMove{
+.banner-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: bannerMove 18s linear infinite;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 0;
+}
 
-    0%{
-        transform:translateX(0);
+@keyframes bannerMove {
+    0% {
+        transform: translateX(100%);
     }
-
-    100%{
-        transform:translateX(-100%);
+    100% {
+        transform: translateX(-100%);
     }
-
 }
 
-.top-banner:hover .banner-track{
-
-    animation-play-state:paused;
-
+.top-banner:hover .banner-track {
+    animation-play-state: paused;
 }
+
 /* ===== How It Works ===== */
 
 .how-it-works{
