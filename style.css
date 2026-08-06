@@ -1281,3 +1281,9 @@ footer p {
     width: fit-content;
     margin: 20px auto;
 }
+div[style*="text-align: center; margin: 40px 0;"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
