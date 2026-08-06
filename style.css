@@ -1323,7 +1323,66 @@ color:#00897b;
 
     border:3px solid #90caf9;
 
-    transition:.5s;
+    overflow:hidden;
+
+}
+
+
+.slide-out{
+
+    animation: slideOut 0.5s forwards;
+
+}
+
+
+.slide-in{
+
+    animation: slideIn 0.5s forwards;
+
+}
+
+
+@keyframes slideOut{
+
+    from{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+        transform:translateX(-100px);
+
+    }
+
+}
+
+
+
+@keyframes slideIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(100px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
 
 }
 
