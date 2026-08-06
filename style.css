@@ -1300,12 +1300,54 @@ color:#00897b;
 
     justify-content:center;
 
-    gap:25px;
-
-    flex-wrap:wrap;
+    align-items:center;
 
 }
 
+
+.preview-card{
+
+    width:260px;
+
+    background:#e3f2fd;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    border:3px solid #90caf9;
+
+    transition:.5s;
+
+}
+
+
+.preview-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.preview-card img{
+
+    width:140px;
+
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+
+}
 
 .preview-card{
 
