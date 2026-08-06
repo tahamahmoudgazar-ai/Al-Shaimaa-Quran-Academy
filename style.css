@@ -560,15 +560,15 @@ h2 {
     font-weight: bold;
     font-size: 18px;
     transition: .3s;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
 .teachers-btn:hover {
     background: #00897b;
     transform: translateY(-3px);
-    margin-bottom: 30px; 
 }
+
 
 /* ===== Animations for Preview Cards ===== */
 .slide-out {
