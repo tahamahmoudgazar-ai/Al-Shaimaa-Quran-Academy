@@ -2065,3 +2065,38 @@ img {
     text-decoration:none;
     display:inline-block;
 }
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section,
+header,
+footer,
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.whatsapp-btn {
+    right: 15px !important;
+    bottom: 20px !important;
+}
+
+.back-to-top {
+    right: 15px !important;
+    bottom: 85px !important;
+}
