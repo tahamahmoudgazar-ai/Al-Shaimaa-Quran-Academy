@@ -567,6 +567,7 @@ h2 {
 .teachers-btn:hover {
     background: #00897b;
     transform: translateY(-3px);
+    margin-bottom: 30px; 
 }
 
 /* ===== Animations for Preview Cards ===== */
