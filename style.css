@@ -1248,6 +1248,11 @@ footer p {
         width: 100%;
     }
 
+    .course-container {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+    }
+
     .course-card,
     .review-card,
     .teacher-card {
@@ -1263,5 +1268,4 @@ footer p {
     h2 {
         font-size: 24px;
     }
-
-    
+}
