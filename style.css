@@ -1910,13 +1910,16 @@ img {
 
 @media (min-width: 769px) {
     .video-box {
-        max-width: 520px;
+        width: 420px;
         margin: 30px auto;
     }
 
     .video-box video {
+        width: 420px;
         height: auto;
         object-fit: contain;
+        display: block;
+        margin: auto;
         background: #000;
     }
 }
