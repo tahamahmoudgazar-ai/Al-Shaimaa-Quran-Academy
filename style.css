@@ -825,42 +825,40 @@ color:#00897b;
 /* ===== Top Banner ===== */
 
 .top-banner{
-
-    background:#FFD54F;
-    color:#222;
-    overflow:hidden;
-    white-space:nowrap;
-    padding:12px 0;
-
+    background: #FFD54F;
+    color: #222;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 12px 0;
 }
 
 .banner-track{
-
-    display:inline-block;
-    padding-left:100%;
-    animation:bannerMove 18s linear infinite;
-    font-size:18px;
-    font-weight:bold;
-
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 0;
+    animation: bannerMove 15s linear infinite;
+    font-size: 18px;
+    font-weight: bold;
+    width: max-content;
 }
 
 @keyframes bannerMove{
-
     0%{
-        transform:translateX(0);
+        transform: translateX(100%);
     }
 
     100%{
-        transform:translateX(-100%);
+        transform: translateX(-100%);
     }
-
 }
 
 .top-banner:hover .banner-track{
-
-    animation-play-state:paused;
-
+    animation-play-state: paused;
 }
+
 /* ===== How It Works ===== */
 
 .how-it-works{
