@@ -1281,3 +1281,12 @@ footer p {
         height: 180px;
     }
 }
+.video-section video,
+.video-card video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
