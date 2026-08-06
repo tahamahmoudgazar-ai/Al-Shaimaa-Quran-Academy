@@ -1909,25 +1909,19 @@ img {
 
 @media (min-width: 769px) {
 
-    @media (min-width: 769px) {
-
     .video-box {
-        max-width: 420px;
-        height: 300px;
+        width: 300px;
         margin: 30px auto;
-        overflow: hidden;
-        border-radius: 15px;
-        background: #000;
     }
 
     .video-box video {
-        width: 100%;
-        height: 300px;
+        width: 300px;
+        height: auto;
         object-fit: contain;
         border-radius: 15px;
     }
 
-    }
+}
 
 
 .home-video {
