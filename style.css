@@ -1354,3 +1354,35 @@ footer p {
         height: 180px;
     }
 }
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100vh;
+    background: #ffffff !important;
+    padding-top: 60px;
+    transition: 0.35s ease;
+    z-index: 1050;
+    box-shadow: 5px 0 25px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu a {
+    display: block;
+    color: #333 !important;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 17px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.side-menu a:hover {
+    background: #f8fbff;
+    color: #2196f3 !important;
+}
+
