@@ -1441,4 +1441,10 @@ footer p {
     visibility: visible;
 }
 
+.side-menu a {
+    color: #333333 !important;
+    opacity: 1 !important;
+    filter: none !important;
+    text-shadow: none !important;
+}
 
