@@ -63,6 +63,7 @@ header .logo-link img {
     display: flex;
     flex-direction: column;
     line-height: 1.1;
+    text-align: left;
 }
 
 .logo-title {
