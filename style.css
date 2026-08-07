@@ -1281,3 +1281,8 @@ footer p {
         height: 180px;
     }
 }
+.top-banner-link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
