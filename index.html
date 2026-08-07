@@ -517,20 +517,20 @@ const sideMenu = document.querySelector(".side-menu");
 const overlay = document.querySelector(".menu-overlay");
 
 menuBtn.addEventListener("click", () => {
-sideMenu.classList.toggle("active");
-overlay.classList.toggle("active");
+    sideMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
 });
 
 document.querySelectorAll(".side-menu a").forEach(link => {
-link.addEventListener("click", () => {
-sideMenu.classList.remove("active");
-overlay.classList.remove("active");
-});
+    link.addEventListener("click", () => {
+        sideMenu.classList.remove("active");
+        overlay.classList.remove("active");
+    });
 });
 
 overlay.addEventListener("click", () => {
-sideMenu.classList.remove("active");
-overlay.classList.remove("active");
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
 });
 </script>
 
@@ -577,41 +577,21 @@ let teacherIndex = 0;
 const card = document.querySelector(".preview-card");
 
 setInterval(() => {
-card.classList.remove("slide-in");
-card.classList.add("slide-out");
-setTimeout(() => {
-teacherIndex++;
-if(teacherIndex >= teachers.length){
-teacherIndex = 0;
-}
-document.getElementById("teacherSlider").src = teachers[teacherIndex].image;
-document.getElementById("teacherName").textContent = teachers[teacherIndex].name;
-document.getElementById("teacherRole").textContent = teachers[teacherIndex].role;
-card.classList.remove("slide-out");
-card.classList.add("slide-in");
-},500);
-},5000);
+    card.classList.remove("slide-in");
+    card.classList.add("slide-out");
+    setTimeout(() => {
+        teacherIndex++;
+        if(teacherIndex >= teachers.length){
+            teacherIndex = 0;
+        }
+        document.getElementById("teacherSlider").src = teachers[teacherIndex].image;
+        document.getElementById("teacherName").textContent = teachers[teacherIndex].name;
+        document.getElementById("teacherRole").textContent = teachers[teacherIndex].role;
+        card.classList.remove("slide-out");
+        card.classList.add("slide-in");
+    }, 500);
+}, 5000);
 </script>
-    const menuBtn = document.querySelector(".menu-toggle");
-const sideMenu = document.querySelector(".side-menu");
-const overlay = document.querySelector(".menu-overlay");
 
-menuBtn.addEventListener("click", () => {
-sideMenu.classList.toggle("active");
-overlay.classList.toggle("active");
-});
-
-document.querySelectorAll(".side-menu a").forEach(link => {
-link.addEventListener("click", () => {
-sideMenu.classList.remove("active");
-overlay.classList.remove("active");
-});
-});
-
-overlay.addEventListener("click", () => {
-sideMenu.classList.remove("active");
-overlay.classList.remove("active");
-});
-    
 </body>
 </html>
