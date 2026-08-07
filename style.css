@@ -161,7 +161,7 @@ nav.navbar a:hover {
     left: -280px !important;
     width: 260px !important;
     height: 100vh !important;
-    background: rgba(33, 150, 243, 0.85) !important;
+    background: rgba(33, 150, 243, 0.2) !important;
     backdrop-filter: blur(10px) !important;
     padding-top: 80px !important;
     transition: 0.35s ease !important;
