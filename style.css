@@ -127,32 +127,42 @@ nav.navbar a:hover {
 
 /* ===== Top Banner ===== */
 .top-banner {
-    background: #FFD54F;
-    color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d233a !important;
+    color: #ffffff !important;
+    height: 40px;
+    line-height: 40px;
     overflow: hidden;
+    z-index: 1001;
     white-space: nowrap;
-    padding: 8px 0;
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .banner-track {
     display: inline-block;
-    padding-left: 100%;
-    animation: bannerMove 18s linear infinite;
-    font-size: 16px;
+    white-space: nowrap;
+    animation: scrollBanner 15s linear infinite;
+    will-change: transform;
+}
+
+.banner-track span {
+    display: inline-block;
+    color: #ffffff !important;
     font-weight: bold;
+    font-size: 14px;
 }
 
-@keyframes bannerMove {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+@keyframes scrollBanner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
-
-.top-banner:hover .banner-track {
-    animation-play-state: paused;
-}
+    
 
     /* ===== Side Menu ===== */
 .side-menu {
@@ -1358,50 +1368,6 @@ footer p {
     }
 }
 
-.top-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #1976d2;
-    color: #ffffff;
-    height: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    z-index: 1001;
-    white-space: nowrap;
-}
 
-.banner-track {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scrollBanner 15s linear infinite;
-    will-change: transform;
-}
-
-.banner-track span {
-    display: inline-block;
-    color: #ffffff !important;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-@keyframes scrollBanner {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-header {
-    top: 40px !important;
-}
-
-body {
-    padding-top: 130px !important;
-}
-    
 
 
