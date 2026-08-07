@@ -62,7 +62,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <header>
 
-
+<button class="menu-toggle">
+    ☰
+</button>
 <a href="/" class="logo-link">
 
 <img src="images/logo.png"
@@ -110,7 +112,24 @@ Learn Quran, Tajweed, Arabic and Islamic Studies with experienced teachers world
 
 
 
+<div class="side-menu">
 
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="courses.html">📚 Courses</a>
+    <a href="teachers.html">👨‍🏫 Teachers</a>
+    <a href="pricing.html">💳 Pricing</a>
+    <a href="videos.html">🎥 Videos</a>
+    <a href="faq.html">❓ FAQ</a>
+    <a href="contact.html">📩 Contact</a>
+
+    <hr>
+
+    <a href="register.html" class="register-btn">
+        📝 Book Free Trial
+    </a>
+
+</div>
 
 <section class="teachers">
 
@@ -392,7 +411,28 @@ class="back-to-top">
 </a>
 
 
+<script>
+const menuBtn = document.querySelector(".menu-toggle");
+const sideMenu = document.querySelector(".side-menu");
+const overlay = document.querySelector(".menu-overlay");
 
+menuBtn.addEventListener("click", () => {
+    sideMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+document.querySelectorAll(".side-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        sideMenu.classList.remove("active");
+        overlay.classList.remove("active");
+    });
+});
+</script>
 
 
 </body>
