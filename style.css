@@ -41,11 +41,27 @@ header p{
     justify-content: space-between;
 }
 
+.top-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
 .logo-link{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.brand{
+    margin-right:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.navbar{
+    margin-top:0;
 }
 
 .brand{
