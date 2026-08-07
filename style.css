@@ -2104,51 +2104,56 @@ img {
     color: #555;
     line-height: 1.6;
 }
-@media (max-width: 768px) {
-
 .top-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 8px 12px;
-    height: 75px;
+    gap: 15px;
 }
 
 .menu-toggle {
-    order: 1;
     flex-shrink: 0;
 }
 
 .logo-link {
-    order: 2;
     flex-shrink: 0;
-    transform: none;
-}
-
-.logo-link img {
-    width: 55px;
-    height: 55px;
 }
 
 .brand {
-    order: 3;
-    flex: 1;
-    text-align: left;
-    margin: 0;
-    transform: none;
+    flex-shrink: 0;
 }
 
-.brand h2 {
-    font-size: 18px;
-    margin: 0;
-    white-space: nowrap;
-}
 
-.brand span {
-    display: block;
-    font-size: 12px;
-    white-space: nowrap;
-}
+@media (max-width: 768px) {
+
+    .top-header {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        order: 1;
+    }
+
+    .logo-link {
+        order: 2;
+    }
+
+    .brand {
+        order: 3;
+    }
+
+    .logo-link img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand h2 {
+        font-size: 17px;
+    }
+
+    .brand span {
+        font-size: 12px;
+    }
 
 }
