@@ -18,46 +18,79 @@ img {
 
 /* ===== Header & Navigation ===== */
 header {
-    background-color: #6ec6ff;
+    background-color: #0d233a;
+    padding: 0;
     color: white;
-    text-align: center;
-    padding: 30px 20px;
 }
 
-header img {
-    width: 90px;
-    height: 90px;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo-link img {
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
+    border: 2px solid #2196f3;
 }
 
-header h1 {
-    color: #0d47a1;
-    font-size: 28px;
+.menu-toggle {
+    background: #2196f3;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
 }
 
-header p {
-    color: #37474f;
+nav.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 0;
 }
 
-nav {
-    margin-top: 20px;
-}
-
-nav a {
+nav.navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #ffe082;
+nav.navbar a:hover {
+    color: #6ec6ff;
 }
 
-.logo-link {
+.header-right .header-trial-btn {
+    background: #1976d2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
     text-decoration: none;
-    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+    transition: 0.3s;
+}
+
+.header-trial-btn:hover {
+    background: #115293;
 }
 
 /* ===== Top Banner ===== */
@@ -89,37 +122,19 @@ nav a:hover {
     animation-play-state: paused;
 }
 
-/* ===== Menu & Side Menu ===== */
-.menu-toggle {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1100;
-    background: #2196f3;
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 22px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,.35);
-}
-
+/* ===== Side Menu ===== */
 .side-menu {
     position: fixed;
     top: 0;
-    left: -270px;
-    width: 250px;
+    left: -280px;
+    width: 260px;
     height: 100vh;
-    background: rgba(255,255,255,0.05) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-right: 1px solid rgba(255,255,255,.3);
-    padding-top: 80px;
-    transition: .35s ease;
+    background: #ffffff !important;
+    padding-top: 60px;
+    transition: 0.35s ease;
     z-index: 1050;
-    box-shadow: 5px 0 25px rgba(0,0,0,.15);
+    box-shadow: 5px 0 25px rgba(0,0,0,0.2);
+    text-align: left;
 }
 
 .side-menu.active {
@@ -128,17 +143,16 @@ nav a:hover {
 
 .side-menu a {
     display: block;
-    color: white !important;
+    color: #333 !important;
     text-decoration: none;
-    padding: 16px 25px;
-    font-size: 18px;
-    border-bottom: 1px solid rgba(255,255,255,.15);
-    transition: .3s;
+    padding: 15px 25px;
+    font-size: 17px;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 .side-menu a:hover {
-    background: rgba(255,255,255,.20);
-    padding-left: 35px;
+    background: #f8fbff;
+    color: #2196f3 !important;
 }
 
 .menu-overlay {
@@ -556,7 +570,7 @@ h2 {
     font-weight: bold;
     font-size: 18px;
     transition: .3s;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -1194,6 +1208,27 @@ footer p {
 }
 
 /* ===== Responsive Design (Mobile) ===== */
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav.navbar {
+        display: none;
+    }
+
+    .header-container {
+        padding: 15px 15px;
+    }
+
+    .header-right .header-trial-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 900px) {
     .videos-gallery .video-grid {
         grid-template-columns: 1fr;
@@ -1221,16 +1256,11 @@ footer p {
 
 @media (max-width: 768px) {
     header {
-        padding: 20px;
+        padding: 0;
     }
 
     header img {
         width: 70px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
     }
 
     .courses,
