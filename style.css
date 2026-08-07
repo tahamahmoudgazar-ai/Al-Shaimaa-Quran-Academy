@@ -35,7 +35,35 @@ header h1,
 header p{
     display: none;
 }
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.logo-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand h2{
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+}
+
+.brand span{
+    color: #ffd54f;
+    font-size: 15px;
+}
 
 /* ===== Navigation ===== */
 
