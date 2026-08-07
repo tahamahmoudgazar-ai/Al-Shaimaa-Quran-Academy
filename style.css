@@ -154,7 +154,7 @@ nav.navbar a:hover {
     animation-play-state: paused;
 }
 
-/* ===== Side Menu ===== */
+    /* ===== Side Menu ===== */
 .side-menu {
     position: fixed !important;
     top: 0 !important;
@@ -165,9 +165,13 @@ nav.navbar a:hover {
     backdrop-filter: blur(10px) !important;
     padding-top: 80px !important;
     transition: 0.35s ease !important;
-    z-index: 999999 !important;
+    z-index: 1000000 !important;
     box-shadow: 5px 0 25px rgba(0,0,0,0.3) !important;
     pointer-events: auto !important;
+}
+
+.side-menu.active {
+    left: 0 !important;
 }
 
 .side-menu a {
@@ -180,14 +184,13 @@ nav.navbar a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
     pointer-events: auto !important;
     position: relative !important;
-    z-index: 1000000 !important;
+    z-index: 1000001 !important;
 }
 
 .side-menu a:hover {
     background: rgba(255, 255, 255, 0.2) !important;
     color: #ffffff !important;
 }
-    
 
 .menu-overlay {
     position: fixed !important;
@@ -199,13 +202,14 @@ nav.navbar a:hover {
     opacity: 0 !important;
     visibility: hidden !important;
     transition: .3s !important;
-    z-index: 9998 !important;
+    z-index: 999998 !important;
 }
 
 .menu-overlay.active {
     opacity: 1 !important;
     visibility: visible !important;
 }
+    
 
 
 /* ===== Sections & Common Elements ===== */
