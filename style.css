@@ -2110,3 +2110,35 @@ img {
         transform: translateX(50px);
     }
 }
+@media (max-width: 768px) {
+
+    .top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .logo-link,
+    .brand {
+        transform: none;
+    }
+
+    .logo-link img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand h2 {
+        font-size: 18px;
+    }
+
+    .brand span {
+        font-size: 12px;
+    }
+
+    .menu-toggle {
+        margin-left: 0;
+    }
+}
