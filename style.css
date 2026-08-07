@@ -3,14 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+    body {
     font-family: Arial, sans-serif;
     background-color: #f4f9ff;
     color: #333;
-    padding-top: 130px;
-}
+    padding-top: 90px;
+    }
 
 img {
     max-width: 100%;
@@ -24,7 +22,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #0d233a;
+    background-color: #1976d2;
     padding: 0;
     color: white;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -163,7 +161,8 @@ nav.navbar a:hover {
     left: -280px !important;
     width: 260px !important;
     height: 100vh !important;
-    background: #ffffff !important;
+    background: rgba(33, 150, 243, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
     padding-top: 80px !important;
     transition: 0.35s ease !important;
     z-index: 999999 !important;
@@ -171,27 +170,24 @@ nav.navbar a:hover {
     pointer-events: auto !important;
 }
 
-.side-menu.active {
-    left: 0 !important;
-}
-
 .side-menu a {
     display: block !important;
-    color: #111111 !important;
+    color: #ffffff !important;
     text-decoration: none !important;
     padding: 16px 25px !important;
     font-size: 18px !important;
     font-weight: bold !important;
-    border-bottom: 1px solid #e0e0e0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
     pointer-events: auto !important;
     position: relative !important;
     z-index: 1000000 !important;
 }
 
 .side-menu a:hover {
-    background: #f0f7ff !important;
-    color: #2196f3 !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
 }
+    
 
 .menu-overlay {
     position: fixed !important;
