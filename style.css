@@ -1447,4 +1447,51 @@ footer p {
     filter: none !important;
     text-shadow: none !important;
 }
+.side-menu {
+    position: fixed !important;
+    top: 0 !important;
+    left: -280px !important;
+    width: 260px !important;
+    height: 100vh !important;
+    background-color: #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding-top: 60px !important;
+    transition: 0.35s ease !important;
+    z-index: 999999 !important;
+    box-shadow: 5px 0 25px rgba(0,0,0,0.2) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.side-menu.active {
+    left: 0 !important;
+}
+
+.side-menu * {
+    color: #333333 !important;
+    opacity: 1 !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.side-menu a {
+    display: block !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+    padding: 15px 25px !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid #f1f1f1 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: transparent !important;
+}
+
+.side-menu a:hover {
+    background: #f8fbff !important;
+    color: #2196f3 !important;
+}
+
 
