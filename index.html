@@ -501,6 +501,19 @@ aria-label="Contact us on WhatsApp">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
 
+<div class="side-menu">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">📄 About</a>
+    <a href="courses.html">📚 Courses</a>
+    <a href="teachers.html">👨‍🏫 Teachers</a>
+    <a href="pricing.html">💰 Pricing</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="videos.html">🎥 Videos</a>
+    <a href="faq.html">❓ FAQ</a>
+</div>
+
+<div class="menu-overlay"></div>
+
 <script>
 const menuBtn = document.querySelector(".menu-toggle");
 const sideMenu = document.querySelector(".side-menu");
@@ -582,42 +595,6 @@ setInterval(() => {
     }, 500);
 }, 5000);
 </script>
-    <script>
-const menuBtn = document.querySelector(".menu-toggle");
-const sideMenu = document.querySelector(".side-menu");
-const overlay = document.querySelector(".menu-overlay");
 
-menuBtn.addEventListener("click", () => {
-    sideMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
-});
-
-document.querySelectorAll(".side-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-        sideMenu.classList.remove("active");
-        overlay.classList.remove("active");
-    });
-});
-
-overlay.addEventListener("click", () => {
-    sideMenu.classList.remove("active");
-    overlay.classList.remove("active");
-});
-    </script>
-    
-
-    <div class="side-menu">
-    <a href="index.html">🏠 Home</a>
-    <a href="about.html">📄 About</a>
-    <a href="courses.html">📚 Courses</a>
-    <a href="teachers.html">👨‍🏫 Teachers</a>
-    <a href="pricing.html">💰 Pricing</a>
-    <a href="contact.html">📞 Contact</a>
-    <a href="videos.html">🎥 Videos</a>
-    <a href="faq.html">❓ FAQ</a>
-    </div>
-    
-<div class="menu-overlay"></div>
-    
 </body>
 </html>
