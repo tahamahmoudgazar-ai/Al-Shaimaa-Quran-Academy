@@ -1358,6 +1358,50 @@ footer p {
     }
 }
 
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1976d2;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 1001;
+    white-space: nowrap;
+}
 
+.banner-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollBanner 15s linear infinite;
+    will-change: transform;
+}
+
+.banner-track span {
+    display: inline-block;
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@keyframes scrollBanner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+header {
+    top: 40px !important;
+}
+
+body {
+    padding-top: 130px !important;
+}
+    
 
 
