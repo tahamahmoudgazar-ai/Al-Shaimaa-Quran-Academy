@@ -2157,3 +2157,100 @@ img {
     }
 
 }
+/* ===== Final Header Fix ===== */
+
+.top-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.menu-toggle{
+    position:relative;
+    top:auto;
+    left:auto;
+    margin:0;
+    flex-shrink:0;
+}
+
+
+.logo-link{
+    margin:0;
+    flex-shrink:0;
+}
+
+
+.brand{
+    margin-right:0;
+    margin-left:0;
+}
+
+
+@media (max-width:768px){
+
+header{
+    padding:8px 10px;
+}
+
+
+.top-header{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+    gap:8px;
+}
+
+
+.menu-toggle{
+    order:1;
+    width:45px;
+    height:45px;
+}
+
+
+.logo-link{
+    order:2;
+}
+
+
+.logo-link img{
+    width:50px;
+    height:50px;
+}
+
+
+.brand{
+    order:3;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.brand h2{
+    font-size:17px;
+    white-space:nowrap;
+}
+
+
+.brand span{
+    font-size:12px;
+    white-space:nowrap;
+}
+
+
+.whatsapp,
+.whatsapp-float{
+    right:15px;
+    bottom:15px;
+}
+
+
+.back-to-top{
+    right:15px;
+    bottom:85px;
+}
+
+}
