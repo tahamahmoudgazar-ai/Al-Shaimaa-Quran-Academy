@@ -462,7 +462,9 @@ h2 {
 
 /* ===== Teachers Section ===== */
 .teachers {
-    padding: 50px 20px;
+    .teachers {
+    padding: 50px 20px 20px;
+    }
     text-align: center;
 }
 
