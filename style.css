@@ -2710,3 +2710,26 @@ body {
         padding-top: 160px !important;
     }
 }
+/* ===== Desktop: Move Pricing & Register Content Down ===== */
+
+@media (min-width: 769px) {
+
+    .pricing {
+        padding-top: 140px !important;
+    }
+
+    .register-section {
+        padding-top: 140px !important;
+    }
+
+}
+/* ===== Desktop spacing for Register & Contact pages ===== */
+
+@media (min-width: 769px) {
+
+    .register-section,
+    .contact-section {
+        padding-top: 80px !important;
+    }
+
+}
