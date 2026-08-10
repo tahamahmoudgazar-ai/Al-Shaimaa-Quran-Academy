@@ -1562,7 +1562,12 @@ transform: translateY(-3px);
 
     font-weight: normal;
 }
-
+/* ===== Desktop: Move Pricing Content Down ===== */
+@media (min-width: 769px) {
+    .pricing-section {
+        padding-top: 140px !important;
+    }
+}
 
 /* =========================
    29. FAQ
