@@ -2703,3 +2703,10 @@ body {
         padding-top: 100px !important;
     }
 }
+/* ===== Pricing - Desktop spacing ===== */
+
+@media (min-width: 769px) {
+    .pricing {
+        padding-top: 140px !important;
+    }
+}
