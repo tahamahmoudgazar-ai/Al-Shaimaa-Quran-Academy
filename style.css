@@ -2693,11 +2693,8 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== Desktop Courses Spacing ===== */
 @media (min-width: 769px) {
-
-    #courses {
-        padding-top: 180px;
+    main {
+        padding-top: 100px !important;
     }
-
 }
