@@ -2692,3 +2692,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+@media (min-width: 769px) {
+    #courses {
+        padding-top: 100px;
+    }
+}
