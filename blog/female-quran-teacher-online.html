@@ -213,4 +213,250 @@ aria-label="Mobile Navigation">
 
 <!-- ==================== ARTICLE ==================== -->
 
-<main class="
+<main class="article-page">
+
+<div class="article-container">
+
+<article class="article-content">
+
+
+<div class="article-meta">
+
+For Sisters · August 2026 · USA & UK
+
+</div>
+
+
+<h1>
+
+Female Quran Teacher Online for Sisters & Kids - USA & UK Guide
+
+</h1>
+
+
+<img
+src="../images/blog-female-quran-teacher.jpg"
+width="1200"
+height="630"
+alt="Female Quran Teacher Online for Women and Kids"
+style="width:100%;height:auto;border-radius:12px;margin:20px 0;"
+>
+
+
+<p>
+
+Many sisters in USA, UK prefer learning Quran with a female teacher
+for comfort & privacy. At Al Shaimaa Quran Academy, we provide
+<strong>Al-Azhar certified female teachers</strong> fluent in English.
+
+</p>
+
+
+<div style="
+background:#fdf2f8;
+border-left:4px solid #ec4899;
+padding:15px;
+border-radius:8px;
+margin:20px 0;
+">
+
+<strong>🌸 Sisters-Only:</strong>
+
+Private 1-on-1 classes with female teachers for women & girls.
+
+<a
+href="../register.html"
+style="color:#db2777;font-weight:bold;">
+
+Book Free Trial with Female Teacher →
+
+</a>
+
+</div>
+
+
+<h2>
+Why Choose Female Teacher?
+</h2>
+
+
+<ul>
+
+<li>
+More comfortable for sisters
+</li>
+
+<li>
+Patient with kids, especially girls
+</li>
+
+<li>
+Understand needs of Western Muslim families
+</li>
+
+<li>
+Flexible EST/PST/GMT timings
+</li>
+
+</ul>
+
+
+<h2>
+What We Teach
+</h2>
+
+
+<p>
+
+Quran reading, Tajweed, Hifz, Islamic Studies for kids.
+All levels from Noorani Qaida to advanced.
+
+</p>
+
+
+<h2>
+Pricing
+</h2>
+
+
+<p>
+
+From
+<a href="../pricing.html">
+$20/month
+</a>
+
+- family discounts. Free trial, no credit card.
+
+</p>
+
+
+<div class="article-links">
+
+<a
+class="primary"
+href="../register.html">
+
+Book Free Trial with Female Teacher
+
+</a>
+
+<a href="../blog.html">
+
+Back to Blog
+
+</a>
+
+</div>
+
+
+</article>
+
+</div>
+
+</main>
+
+
+<!-- ==================== FOOTER ==================== -->
+
+<footer>
+
+<p>
+© 2026 Al Shaimaa Quran Academy
+</p>
+
+</footer>
+
+
+<!-- ==================== BACK TO TOP ==================== -->
+
+<a
+href="#"
+class="back-to-top"
+aria-label="Back to top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+
+<!-- ==================== WHATSAPP ==================== -->
+
+<a
+href="https://wa.me/201027791837"
+class="whatsapp-float"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Contact us on WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- ==================== JAVASCRIPT ==================== -->
+
+<script>
+
+const menuBtn =
+document.querySelector(".menu-toggle");
+
+const sideMenu =
+document.querySelector(".side-menu");
+
+const overlay =
+document.querySelector(".menu-overlay");
+
+
+function closeMenu() {
+
+sideMenu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+menuBtn.setAttribute(
+"aria-expanded",
+"false"
+);
+
+}
+
+
+menuBtn.addEventListener("click", () => {
+
+const isOpen =
+sideMenu.classList.toggle("active");
+
+overlay.classList.toggle("active");
+
+menuBtn.setAttribute(
+"aria-expanded",
+isOpen ? "true" : "false"
+);
+
+});
+
+
+document
+.querySelectorAll(".side-menu a")
+.forEach(link => {
+
+link.addEventListener(
+"click",
+closeMenu
+);
+
+});
+
+
+overlay.addEventListener(
+"click",
+closeMenu
+);
+
+</script>
+
+
+</body>
+
+</html>
