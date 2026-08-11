@@ -3035,53 +3035,44 @@ body {
         font-size: 12px;
     }
 }
-/* ==================== DARK NAVY HEADER ==================== */
+/* ===== DARK NAVY HEADER ===== */
 
 .main-header {
-    background: #0b1f3a !important;
+    background-color: #071a3d !important;
 }
 
-/* Top Banner */
-.top-banner {
-    background: #07162b !important;
-    color: #ffffff !important;
-}
-
-/* Header Container */
-.header-container {
-    background: #0b1f3a !important;
-}
-
-/* Logo Text */
-.logo-title {
-    color: #ffffff !important;
-}
-
+.logo-title,
 .logo-subtitle {
-    color: #d4af37 !important;
+    color: #ffffff !important;
 }
 
-/* Navigation */
 .navbar a {
     color: #ffffff !important;
+    font-size: 17px !important;
+    font-weight: 600;
 }
 
 .navbar a:hover {
     color: #d4af37 !important;
 }
 
-/* Menu Button */
+.header-trial-btn {
+    color: #ffffff !important;
+}
+
 .menu-toggle {
     color: #ffffff !important;
 }
 
-/* Free Trial Button */
-.header-trial-btn {
-    background: #d4af37 !important;
-    color: #ffffff !important;
+
+/* ===== SHORTER SIDE MENU ===== */
+
+.side-menu {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
 }
 
-.header-trial-btn:hover {
-    background: #b8962e !important;
-    color: #ffffff !important;
+.side-menu a {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
 }
