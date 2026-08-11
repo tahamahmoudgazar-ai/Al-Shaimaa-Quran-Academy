@@ -308,4 +308,274 @@ Claim Free Trial + Chart →
 </div>
 
 
-<!-- ==================== WHY TAJWEED ====================
+<!-- ==================== WHY TAJWEED ==================== -->
+
+<h2>
+Why Tajweed Matters
+</h2>
+
+<p>
+
+Small changes in pronunciation can change meaning. For example, Qalb (heart) and Kalb (dog) differ by one letter. Learning correct pronunciation helps protect the meaning of Quranic words.
+
+</p>
+
+
+<!-- ==================== BASIC RULES ==================== -->
+
+<h2>
+Basic Tajweed Rules for Beginners
+</h2>
+
+<ul>
+
+<li>
+
+<strong>
+Noon Sakinah & Tanween:
+</strong>
+
+Izhar, Idgham, Iqlab, Ikhfa
+
+</li>
+
+
+<li>
+
+<strong>
+Qalqala:
+</strong>
+
+Qaf, Taa, Baa, Jeem, Dal when sakin
+
+</li>
+
+
+<li>
+
+<strong>
+Madd:
+</strong>
+
+Elongation of 2, 4 and 6 counts
+
+</li>
+
+
+<li>
+
+<strong>
+Ghunna:
+</strong>
+
+Nasal sound in Noon & Meem mushaddad
+
+</li>
+
+</ul>
+
+
+<p>
+
+Don't learn everything at once. Start with one rule at a time and practice with teacher correction.
+
+See our
+
+<a href="../courses.html">
+Tajweed course
+</a>.
+
+</p>
+
+
+<!-- ==================== ONLINE TAJWEED ==================== -->
+
+<h2>
+How to Learn Tajweed Online
+</h2>
+
+<p>
+
+One-on-one lessons with a qualified Quran teacher can help you practice Tajweed and receive live pronunciation corrections. Students in USA and UK can learn with flexible online schedules.
+
+See our
+
+<a href="../teachers.html">
+Quran teachers
+</a>
+
+or explore pricing from
+
+<a href="../pricing.html">
+$20/month
+</a>.
+
+</p>
+
+
+<!-- ==================== ARTICLE LINKS ==================== -->
+
+<div class="article-links">
+
+<a
+class="primary"
+href="../register.html">
+
+Book Free Tajweed Trial
+
+</a>
+
+
+<a href="../blog.html">
+
+Back to Blog
+
+</a>
+
+</div>
+
+
+</article>
+
+</div>
+
+</main>
+
+
+
+<!-- ==================== FOOTER ==================== -->
+
+<footer>
+
+<h3>
+Follow Us
+</h3>
+
+<div class="social-icons">
+
+<a
+href="https://www.facebook.com/share/18JmVpPa9s/"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Facebook">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+</a>
+
+
+<a
+href="https://www.instagram.com/shimaamahmoudzaki1234?igsh=b29tYXFodWRqeWl2"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Instagram">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+</div>
+
+
+<p>
+© 2026 Al Shaimaa Quran Academy
+</p>
+
+</footer>
+
+
+
+<!-- ==================== BACK TO TOP ==================== -->
+
+<a
+href="#"
+class="back-to-top"
+aria-label="Back to top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+
+
+<!-- ==================== WHATSAPP ==================== -->
+
+<a
+href="https://wa.me/201027791837"
+class="whatsapp-float"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Contact us on WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- ==================== SIDE MENU SCRIPT ==================== -->
+
+<script>
+
+const menuBtn =
+document.querySelector(".menu-toggle");
+
+const sideMenu =
+document.querySelector(".side-menu");
+
+const overlay =
+document.querySelector(".menu-overlay");
+
+
+function closeMenu() {
+
+sideMenu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+menuBtn.setAttribute(
+"aria-expanded",
+"false"
+);
+
+}
+
+
+menuBtn.addEventListener("click", () => {
+
+const isOpen =
+sideMenu.classList.toggle("active");
+
+overlay.classList.toggle("active");
+
+menuBtn.setAttribute(
+"aria-expanded",
+isOpen ? "true" : "false"
+);
+
+});
+
+
+document
+.querySelectorAll(".side-menu a")
+.forEach(link => {
+
+link.addEventListener(
+"click",
+closeMenu
+);
+
+});
+
+
+overlay.addEventListener(
+"click",
+closeMenu
+);
+
+</script>
+
+
+</body>
+
+</html>
