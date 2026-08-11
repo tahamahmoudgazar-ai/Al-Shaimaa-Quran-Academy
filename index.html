@@ -1,4 +1,23 @@
-<!DOCTYPE html><html lang="en-US"><head>
+<!DOCTYPE html><html lang="en-US"><head><!-- PLAYABLE_TOUCH_PATCH_V1 --><script>
+(function() {
+  if (window.__playableTouchPatchInstalled) return;
+  window.__playableTouchPatchInstalled = true;
+  var origAdd = EventTarget.prototype.addEventListener;
+  var blockedTypes = { touchstart: 1, touchmove: 1, wheel: 1 };
+  EventTarget.prototype.addEventListener = function(type, listener, options) {
+    if (blockedTypes[type]) {
+      if (options === undefined || options === null) {
+        options = { passive: true };
+      } else if (typeof options === 'boolean') {
+        options = { capture: options, passive: true };
+      } else {
+        options = Object.assign({}, options, { passive: true });
+      }
+    }
+    return origAdd.call(this, type, listener, options);
+  };
+})();
+</script><script>window.Intl=window.Intl||{};Intl.t=function(s){return(Intl._locale&&Intl._locale[s])||s;};</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Online Quran Academy | Al Shaimaa Quran Academy</title>
 
@@ -43,6 +62,8 @@
 
 <!-- Organization Schema -->
 <script type="application/ld+json">
+
+    
 {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
@@ -60,6 +81,38 @@
         "https://www.facebook.com/share/18JmVpPa9s/",
         "https://www.instagram.com/shimaamahmoudzaki1234"
     ]
+}
+</script>
+<!-- FAQ Schema NEW -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [{
+"@type": "Question",
+"name": "Who can join Al Shimaa Quran Academy?",
+"acceptedAnswer": {"@type": "Answer","text": "Anyone worldwide can join! Our Quran, Tajweed, and Arabic courses are for kids, adults, beginners, and sisters. We serve USA, UK, Canada, Australia and Europe with flexible EST, PST, GMT timings."}
+},{
+"@type": "Question",
+"name": "Is there a free trial?",
+"acceptedAnswer": {"@type": "Answer","text": "Yes, we offer a 100% free trial lesson with a qualified male or female teacher. No credit card needed."}
+},{
+"@type": "Question",
+"name": "What courses do you offer?",
+"acceptedAnswer": {"@type": "Answer","text": "We offer Quran Reading, Quran Memorization (Hifz), Tajweed, Arabic Language, and Islamic Studies with customized programs for kids, adults, and sisters."}
+},{
+"@type": "Question",
+"name": "Are the classes live or pre-recorded?",
+"acceptedAnswer": {"@type": "Answer","text": "All classes are 100% live one-to-one with real certified teachers on Zoom. Real-time feedback and correction."}
+},{
+"@type": "Question",
+"name": "How much do Quran lessons cost?",
+"acceptedAnswer": {"@type": "Answer","text": "Affordable plans from $20/month. Family discounts up to 20%. No long-term contracts."}
+},{
+"@type": "Question",
+"name": "Is there a refund guarantee?",
+"acceptedAnswer": {"@type": "Answer","text": "Yes! 100% satisfaction guarantee. If not happy, request a refund."}
+}]
 }
 </script>
 
@@ -271,6 +324,17 @@
 
     </section>
 
+    <!-- ============ NEW: TRUST BADGES (ADDED) ============ -->
+    <section style="padding:30px 20px;background:#f8fafc;text-align:center;border-top:1px solid #eee;border-bottom:1px solid #eee;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;font-weight:700;color:#166534;font-size:15px;">
+            <span>✅ Al-Azhar Certified Teachers</span>
+            <span>✅ 100% Money Back Guarantee</span>
+            <span>✅ Free Trial Lesson</span>
+            <span>✅ 24/7 Support EST/PST/GMT</span>
+            <span>✅ Up to 20% Family Discount</span>
+        </div>
+    </section>
+
 
     <!-- ==================== HOW IT WORKS ==================== -->
 
@@ -443,6 +507,17 @@
 
         </div>
 
+    </section>
+
+    <!-- ============ NEW: PRICING TEASER (ADDED) ============ -->
+    <section style="padding:50px 20px;text-align:center;background:#ffffff;border-top:2px solid #f0fdf4;border-bottom:2px solid #f0fdf4;">
+        <h2>Affordable Quran Classes From $20/Month</h2>
+        <p>Flexible plans for USA, UK & Canada - No long-term contract - Cancel anytime - Family discounts up to 20%</p>
+        <div style="margin:25px 0;">
+            <a href="pricing.html" style="background:#16a34a;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;">See Pricing Plans →</a>
+            <a href="register.html" style="border:2px solid #16a34a;color:#16a34a;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:bold;margin-left:10px;display:inline-block;">Book Free Trial</a>
+        </div>
+        <p style="font-size:14px;color:#666;">✓ No credit card needed for trial ✓ 100% Satisfaction Guarantee ✓ EST/PST/GMT Timings</p>
     </section>
 
 
@@ -653,6 +728,48 @@
             </p>
 
         </div>
+
+    </section>
+
+    <!-- ============ NEW: FAQ SECTION (ADDED - SEO POWER) ============ -->
+    <section id="faq-home" style="padding:50px 20px;max-width:900px;margin:50px auto;background:#f9fafb;border-radius:16px;">
+        <h2 style="text-align:center;margin-bottom:10px;">Frequently Asked Questions</h2>
+        <p style="text-align:center;color:#666;margin-bottom:25px;">Everything you need to know about learning Quran online</p>
+
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
+            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Who can join Al Shimaa Quran Academy?</summary>
+            <p style="margin-top:12px;color:#444;">Anyone, anywhere in the world can join! Our courses are designed for kids, adults, beginners, and advanced learners, sisters and new Muslims. All you need is a device and internet connection. We serve students across USA, UK, Canada, Europe, Australia.</p>
+        </details>
+
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
+            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Is there a free trial?</summary>
+            <p style="margin-top:12px;color:#444;">Yes, we offer a 100% free trial class so you can experience our quality before committing. No credit card needed. <a href="register.html">Book your free trial here</a>.</p>
+        </details>
+
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
+            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">What courses do you offer?</summary>
+            <p style="margin-top:12px;color:#444;">We offer Quran Reading, Quran Memorization (Hifz), Tajweed, Arabic Language, and Islamic Studies, with customized programs for each age and level. <a href="courses.html">See all courses</a> | <a href="blog.html">Read our guides</a> including <a href="blog/what-is-tajweed-why-important.html">What is Tajweed</a>.</p>
+        </details>
+
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
+            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Can I choose my class timings?</summary>
+            <p style="margin-top:12px;color:#444;">Yes, we offer flexible scheduling. You can pick the days and times that suit your family's routine, wherever you live in the world. We support EST, PST, GMT and all time zones for USA, UK, Canada families.</p>
+        </details>
+
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
+            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Are the classes live or pre-recorded?</summary>
+            <p style="margin-top:12px;color:#444;">All our classes are 100% live with real teachers. You'll get one-to-one attention and real-time feedback. Each session is interactive via Zoom. Our teachers are Al-Azhar certified male and female instructors.</p>
+        </details>
+
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
+            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">How much do Quran lessons cost?</summary>
+            <p style="margin-top:12px;color:#444;">Our pricing is flexible and affordable, starting from just $20/month depending on your plan, course type, and frequency. We offer custom packages for individuals and families with up to 20% discount. <a href="pricing.html">Check pricing here</a> and contact us for a free quote.</p>
+        </details>
+
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
+            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Is there a refund guarantee?</summary>
+            <p style="margin-top:12px;color:#444;">Yes! We offer a 100% satisfaction guarantee. If you're not happy with your experience, you can request a refund. Learn more in our <a href="blog/how-to-learn-quran-online.html">beginners guide</a> or <a href="faq.html">FAQ page</a>.</p>
+        </details>
 
     </section>
 
