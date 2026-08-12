@@ -1,28 +1,35 @@
 # Al Shimaa Quran Academy
 
-Website: https://alshimaaquranacademy.com
+> Al Shimaa Quran Academy provides online Quran classes for kids and adults worldwide, including Quran reading, Quran memorization (Hifz), Tajweed, Arabic language, and Islamic Studies. Students can book a free trial class and learn with qualified online Quran teachers.
 
-Al Shimaa Quran Academy provides online Quran classes for kids and adults worldwide.
+## Main Services
 
-Main Services:
-- Quran Reading
-- Quran Memorization (Hifz)
-- Tajweed
-- Arabic Language
-- Islamic Studies
-- Free Trial Class
+- Quran Reading: Online Quran reading classes for beginners and advanced students.
+- Quran Memorization (Hifz): Structured online Quran memorization programs.
+- Tajweed: Learn correct Quran pronunciation and Tajweed rules.
+- Arabic Language: Online Arabic language classes for Quran learners and students.
+- Islamic Studies: Online Islamic Studies lessons for children and adults.
+- Free Trial Class: Book a free trial Quran class online.
 
-Main Pages:
-https://alshimaaquranacademy.com/
-https://alshimaaquranacademy.com/about.html
-https://alshimaaquranacademy.com/courses.html
-https://alshimaaquranacademy.com/teachers.html
-https://alshimaaquranacademy.com/pricing.html
-https://alshimaaquranacademy.com/faq.html
-https://alshimaaquranacademy.com/contact.html
+## Main Pages
 
-Audience:
-Children, Adults, Reverts, Beginners, Advanced Students
+- [Home](https://alshimaaquranacademy.com/): Main website and introduction to Al Shimaa Quran Academy.
+- [About](https://alshimaaquranacademy.com/about.html): Information about the academy and its approach to online Quran education.
+- [Courses](https://alshimaaquranacademy.com/courses.html): Online Quran, Tajweed, Arabic, and Islamic Studies courses.
+- [Teachers](https://alshimaaquranacademy.com/teachers.html): Information about the academy's online Quran teachers.
+- [Pricing](https://alshimaaquranacademy.com/pricing.html): Quran course pricing and available plans.
+- [FAQ](https://alshimaaquranacademy.com/faq.html): Frequently asked questions about online Quran classes.
+- [Contact](https://alshimaaquranacademy.com/contact.html): Contact Al Shimaa Quran Academy and request information.
+- [Videos](https://alshimaaquranacademy.com/videos.html): Educational Quran videos and learning resources.
 
-Languages:
-English
+## Audience
+
+- Children
+- Adults
+- Reverts
+- Beginners
+- Advanced Students
+
+## Language
+
+- English
