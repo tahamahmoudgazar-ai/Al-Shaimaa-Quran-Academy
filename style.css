@@ -3076,3 +3076,7 @@ body {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
 }
+footer a[href*="privacy-policy"],
+footer a[href*="terms"] {
+    color: #fff !important;
+}
