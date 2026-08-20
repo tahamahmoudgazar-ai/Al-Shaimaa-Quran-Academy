@@ -3201,48 +3201,12 @@ body {
 }
 
 /* =================================================
-   COURSES DROPDOWN - FINAL COLOR FIX
+   COURSES DROPDOWN - MATCH SIDE MENU BACKGROUND
    ================================================= */
 
-.side-menu-courses {
-    background: transparent !important;
-}
-
-
-/* Courses button */
-
-.side-menu-courses-toggle {
-    background: transparent !important;
-    color: #263238 !important;
-}
-
-
-/* Courses button hover */
-
-.side-menu-courses-toggle:hover {
-    background: #eef7ff !important;
-    color: #1976d2 !important;
-}
-
-
-/* Courses submenu */
-
-.side-menu-courses-list {
-    background: transparent !important;
-}
-
-
-/* Submenu links */
-
+.side-menu-courses,
+.side-menu-courses-toggle,
+.side-menu-courses-list,
 .side-menu-courses-list a {
-    background: transparent !important;
-    color: #263238 !important;
-}
-
-
-/* Submenu hover */
-
-.side-menu-courses-list a:hover {
-    background: #eef7ff !important;
-    color: #1976d2 !important;
+    background: inherit !important;
 }
