@@ -363,6 +363,7 @@ header {
 
 .side-menu-courses {
     width: 100%;
+    background: transparent;
 }
 
 
@@ -382,7 +383,7 @@ header {
 
     padding: 15px 25px;
 
-    background: #ffffff;
+    background: transparent;
 
     color: #263238;
 
@@ -436,7 +437,7 @@ header {
 
     display: none;
 
-    background: #f8fbfe;
+    background: transparent;
 }
 
 
@@ -450,19 +451,27 @@ header {
 
 .side-menu-courses-list a {
 
+    display: block;
+
     padding: 12px 25px 12px 42px;
+
+    color: #263238 !important;
 
     font-size: 14px;
 
     font-weight: 500;
 
-    background: #f8fbfe;
+    background: transparent;
 
     border-bottom: 1px solid #edf2f7;
+
+    transition: 0.3s ease;
 }
 
 
 .side-menu-courses-list a:hover {
+
+    color: #1976d2 !important;
 
     padding-left: 49px;
 
