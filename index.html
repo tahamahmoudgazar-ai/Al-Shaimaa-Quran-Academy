@@ -232,16 +232,79 @@
 <aside class="side-menu" aria-label="Mobile Navigation">
 
     <a href="index.html">🏠 Home</a>
+
     <a href="about.html">📖 About</a>
-    <a href="courses.html">📚 Courses</a>
+
+
+    <!-- ==================== COURSES DROPDOWN ==================== -->
+
+    <div class="side-menu-courses">
+
+        <button
+            type="button"
+            class="side-menu-courses-toggle"
+            aria-expanded="false"
+        >
+
+            <span>
+                📚 Courses
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </button>
+
+
+        <div class="side-menu-courses-list">
+
+            <a href="courses.html">
+                📚 All Courses
+            </a>
+
+            <a href="quran-memorization.html">
+                📖 Quran Memorization
+            </a>
+
+            <a href="tajweed-course.html">
+                🕌 Tajweed Course
+            </a>
+
+            <a href="noorani-qaida.html">
+                📖 Noorani Qaida
+            </a>
+
+            <a href="arabic-language.html">
+                🔤 Arabic Language
+            </a>
+
+            <a href="islamic-studies.html">
+                🌙 Islamic Studies
+            </a>
+
+            <a href="online-quran-classes.html">
+                💻 Online Quran Classes
+            </a>
+
+        </div>
+
+    </div>
+
+
     <a href="teachers.html">👨‍🏫 Teachers</a>
+
     <a href="pricing.html">💲 Pricing</a>
+
     <a href="contact.html">📞 Contact</a>
+
     <a href="videos.html">🎥 Videos</a>
+
     <a href="faq.html">❓ FAQ</a>
+
     <a href="blog.html">📝 Blog</a>
 
+
     <hr>
+
 
     <a href="register.html" class="register-btn">
         📝 Book Free Trial
@@ -937,24 +1000,75 @@ One-Year Juz Amma Memorization Plan →
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-
 <!-- ==================== MOBILE MENU SCRIPT ==================== -->
 
 <script>
 
-    const menuBtn = document.querySelector(".menu-toggle");
-    const sideMenu = document.querySelector(".side-menu");
-    const overlay = document.querySelector(".menu-overlay");
+    const menuBtn =
+        document.querySelector(".menu-toggle");
+
+    const sideMenu =
+        document.querySelector(".side-menu");
+
+    const overlay =
+        document.querySelector(".menu-overlay");
+
+
+    /* ==================== COURSES DROPDOWN ==================== */
+
+    const coursesToggle =
+        document.querySelector(".side-menu-courses-toggle");
+
+    const coursesList =
+        document.querySelector(".side-menu-courses-list");
+
+
+    coursesToggle.addEventListener("click", () => {
+
+        const isOpen =
+            coursesList.classList.toggle("active");
+
+        coursesToggle.classList.toggle("active");
+
+        coursesToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+    });
+
+
+    /* ==================== CLOSE MENU ==================== */
 
     function closeMenu() {
+
         sideMenu.classList.remove("active");
+
         overlay.classList.remove("active");
-        menuBtn.setAttribute("aria-expanded", "false");
+
+        menuBtn.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        coursesList.classList.remove("active");
+
+        coursesToggle.classList.remove("active");
+
+        coursesToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
     }
+
+
+    /* ==================== OPEN MENU ==================== */
 
     menuBtn.addEventListener("click", () => {
 
-        const isOpen = sideMenu.classList.toggle("active");
+        const isOpen =
+            sideMenu.classList.toggle("active");
 
         overlay.classList.toggle("active");
 
@@ -966,14 +1080,26 @@ One-Year Juz Amma Memorization Plan →
     });
 
 
-    document.querySelectorAll(".side-menu a").forEach(link => {
+    /* ==================== MENU LINKS ==================== */
 
-        link.addEventListener("click", closeMenu);
+    document
+        .querySelectorAll(".side-menu a")
+        .forEach(link => {
 
-    });
+            link.addEventListener(
+                "click",
+                closeMenu
+            );
+
+        });
 
 
-    overlay.addEventListener("click", closeMenu);
+    /* ==================== OVERLAY ==================== */
+
+    overlay.addEventListener(
+        "click",
+        closeMenu
+    );
 
 </script>
 
