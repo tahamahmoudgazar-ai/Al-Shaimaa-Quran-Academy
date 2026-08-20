@@ -3079,3 +3079,80 @@ body {
 .footer-links a {
     color: #ffffff !important;
 }
+/* ==================== SIDE MENU COURSES ==================== */
+
+.side-menu-courses {
+    width: 100%;
+}
+
+
+.side-menu-courses-toggle {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    background: transparent;
+
+    border: none;
+
+    color: inherit;
+
+    font-family: inherit;
+
+    font-size: inherit;
+
+    text-align: left;
+
+    cursor: pointer;
+
+}
+
+
+.side-menu-courses-toggle i {
+
+    font-size: 12px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.side-menu-courses-toggle.active i {
+
+    transform: rotate(180deg);
+
+}
+
+
+.side-menu-courses-list {
+
+    display: none;
+
+    padding-left: 18px;
+
+}
+
+
+.side-menu-courses-list.active {
+
+    display: block;
+
+}
+
+
+.side-menu-courses-list a {
+
+    display: block;
+
+    padding: 9px 0;
+
+    font-size: 14px;
+
+}
