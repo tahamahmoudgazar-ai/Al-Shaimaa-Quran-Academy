@@ -226,7 +226,6 @@
 
 </header>
 
-
 <!-- ==================== SIDE MENU ==================== -->
 
 <aside class="side-menu" aria-label="Mobile Navigation">
@@ -245,13 +244,9 @@
             class="side-menu-courses-toggle"
             aria-expanded="false"
         >
-
-            <span>
-                📚 Courses
-            </span>
+            <span>📚 Courses</span>
 
             <i class="fa-solid fa-chevron-down"></i>
-
         </button>
 
 
@@ -1000,7 +995,10 @@ One-Year Juz Amma Memorization Plan →
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<!-- ==================== MOBILE MENU SCRIPT ==================== -->
+
+
+
+    <!-- ==================== MOBILE MENU SCRIPT ==================== -->
 
 <script>
 
@@ -1023,7 +1021,7 @@ One-Year Juz Amma Memorization Plan →
         document.querySelector(".side-menu-courses-list");
 
 
-    coursesToggle.addEventListener("click", () => {
+    coursesToggle.addEventListener("click", function () {
 
         const isOpen =
             coursesList.classList.toggle("active");
@@ -1065,7 +1063,7 @@ One-Year Juz Amma Memorization Plan →
 
     /* ==================== OPEN MENU ==================== */
 
-    menuBtn.addEventListener("click", () => {
+    menuBtn.addEventListener("click", function () {
 
         const isOpen =
             sideMenu.classList.toggle("active");
@@ -1080,11 +1078,11 @@ One-Year Juz Amma Memorization Plan →
     });
 
 
-    /* ==================== MENU LINKS ==================== */
+    /* ==================== CLOSE WHEN CLICKING LINK ==================== */
 
     document
         .querySelectorAll(".side-menu a")
-        .forEach(link => {
+        .forEach(function (link) {
 
             link.addEventListener(
                 "click",
