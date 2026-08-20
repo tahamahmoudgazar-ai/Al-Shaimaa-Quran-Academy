@@ -77,7 +77,11 @@
     <loc>https://alshimaaquranacademy.com/online-quran-classes.html</loc>
     <lastmod>2026-08-12</lastmod>
   </url>
-
+<url>
+    <loc>https://alshimaaquranacademy.com/noorani-qaida.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
   <!-- Blog Articles -->
 
   <url>
