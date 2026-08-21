@@ -3210,3 +3210,23 @@ body {
 .side-menu-courses-list a {
     background: inherit !important;
 }
+/* =========================
+   BLOG CARD IMAGES
+   ========================= */
+
+.blog-card-image {
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .blog-card-image {
+        width: 120px;
+        height: 80px;
+    }
+}
