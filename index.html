@@ -341,18 +341,29 @@
 
     </div>
 
-    <div class="hero-image">
+    <div class="hero-image hero-course-slider">
 
+    <a
+        id="hero-course-link"
+        href="tajweed-course.html"
+        aria-label="Tajweed Course"
+    >
         <img
-            src="images/hero.png"
-            alt="Student learning Quran online with a qualified Quran teacher"
+            id="hero-course-image"
+            src="images/blog-tajweed-importance.jpg"
+            alt="Tajweed Course"
             width="800"
             height="600"
             loading="eager"
             fetchpriority="high"
         >
 
-    </div>
+        <span id="hero-course-title">
+            Tajweed Course
+        </span>
+    </a>
+
+</div>
 
 </section>
 
@@ -1197,7 +1208,67 @@ One-Year Juz Amma Memorization Plan →
     }, 5000);
 
 </script>
+  
+<script>
+const heroCourses = [
+    {
+        image: "images/blog-tajweed-importance.jpg",
+        title: "Tajweed Course",
+        link: "tajweed-course.html"
+    },
+    {
+        image: "images/blog-how-to-memorize-quran-online.jpg",
+        title: "Quran Memorization",
+        link: "quran-memorization.html"
+    },
+    {
+        image: "images/blog-female-quran-teacher.jpg",
+        title: "Online Quran Classes",
+        link: "online-quran-classes.html"
+    },
+    {
+        image: "images/blog-learn-quran-online.jpg",
+        title: "Islamic Studies",
+        link: "islamic-studies.html"
+    },
+    {
+        image: "images/noorani-qaida-course.jpg",
+        title: "Noorani Qaida",
+        link: "noorani-qaida.html"
+    }
+];
 
+const heroImage = document.getElementById("hero-course-image");
+const heroLink = document.getElementById("hero-course-link");
+const heroTitle = document.getElementById("hero-course-title");
+const heroSlider = document.querySelector(".hero-course-slider");
+
+let heroIndex = 0;
+
+setInterval(() => {
+
+    heroSlider.classList.add("hero-course-changing");
+
+    setTimeout(() => {
+
+        heroIndex = (heroIndex + 1) % heroCourses.length;
+
+        const course = heroCourses[heroIndex];
+
+        heroImage.src = course.image;
+        heroImage.alt = course.title;
+
+        heroLink.href = course.link;
+        heroLink.setAttribute("aria-label", course.title);
+
+        heroTitle.textContent = course.title;
+
+        heroSlider.classList.remove("hero-course-changing");
+
+    }, 500);
+
+}, 4000);
+</script>
 </body>
 
 </html>
