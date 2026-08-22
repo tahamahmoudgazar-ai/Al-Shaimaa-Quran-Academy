@@ -1209,109 +1209,85 @@ One-Year Juz Amma Memorization Plan →
     }, 5000);
 
 </script>
-  <script>
+<script>
 const heroCourses = [
     {
-    image: "images/blog-tajweed-importance.jpg",
-    title: "Tajweed Course",
-    link: "tajweed-course.html"
-},
-{
-    image: "images/blog-how-to-memorize-quran-online.jpg",
-    title: "Quran Memorization",
-    link: "quran-memorization.html"
-},
-{
-    image: "images/blog-female-quran-teacher.jpg",
-    title: "Online Quran Classes",
-    link: "online-quran-classes.html"
-},
-{
-    image: "images/islamic-studies.webp",
-    title: "Islamic Studies",
-    link: "islamic-studies.html"
-},
-{
-    image: "images/noorani-qaida-course.jpg",
-    title: "Noorani Qaida",
-    link: "noorani-qaida.html"
-},
-{
-    image: "images/arabic-language-course.jpg",
-    title: "Arabic Language",
-    link: "arabic-language.html"
-}
+        image: "images/blog-tajweed-importance.jpg",
+        title: "Tajweed Course",
+        link: "tajweed-course.html"
+    },
+    {
+        image: "images/blog-how-to-memorize-quran-online.jpg",
+        title: "Quran Memorization",
+        link: "quran-memorization.html"
+    },
+    {
+        image: "images/blog-female-quran-teacher.jpg",
+        title: "Online Quran Classes",
+        link: "online-quran-classes.html"
+    },
+    {
+        image: "images/islamic-studies.webp",
+        title: "Islamic Studies",
+        link: "islamic-studies.html"
+    },
+    {
+        image: "images/noorani-qaida-course.jpg",
+        title: "Noorani Qaida",
+        link: "noorani-qaida.html"
+    },
+    {
+        image: "images/arabic-language-course.jpg",
+        title: "Arabic Language",
+        link: "arabic-language.html"
+    }
 ];
 
-const currentImage =
-    document.getElementById("hero-course-current");
-
-const nextImage =
-    document.getElementById("hero-course-next");
-
-const heroLink =
-    document.getElementById("hero-course-link");
-
-const heroTitle =
-    document.getElementById("hero-course-title");
+const heroImage = document.getElementById("hero-course-image");
+const heroLink = document.getElementById("hero-course-link");
+const heroTitle = document.getElementById("hero-course-title");
 
 let heroIndex = 0;
-let isAnimating = false;
 
 function changeHeroCourse() {
-
-    if (isAnimating) return;
-
-    isAnimating = true;
 
     const nextIndex =
         (heroIndex + 1) % heroCourses.length;
 
-    const course =
-        heroCourses[nextIndex];
+    const course = heroCourses[nextIndex];
 
-    nextImage.src = course.image;
-    nextImage.alt = course.title;
+    const preloadedImage = new Image();
 
-    nextImage.classList.add("slide-from-right");
-    currentImage.classList.add("slide-left");
+    preloadedImage.src = course.image;
 
-    setTimeout(() => {
+    preloadedImage.onload = function () {
 
-        heroIndex = nextIndex;
+        heroImage.style.opacity = "0";
 
-        currentImage.src = course.image;
-        currentImage.alt = course.title;
+        setTimeout(() => {
 
-        heroLink.href = course.link;
-        heroLink.setAttribute(
-            "aria-label",
-            course.title
-        );
+            heroImage.src = course.image;
+            heroImage.alt = course.title;
 
-        heroTitle.textContent =
-            course.title;
+            heroLink.href = course.link;
+            heroLink.setAttribute(
+                "aria-label",
+                course.title
+            );
 
-        currentImage.classList.remove("slide-left");
-        nextImage.classList.remove("slide-from-right");
+            heroTitle.textContent =
+                course.title;
 
-        const followingIndex =
-            (heroIndex + 1) % heroCourses.length;
+            heroImage.style.opacity = "1";
 
-        nextImage.src =
-            heroCourses[followingIndex].image;
+            heroIndex = nextIndex;
 
-        nextImage.alt = "";
-
-        isAnimating = false;
-
-    }, 750);
+        }, 300);
+    };
 }
 
 setInterval(changeHeroCourse, 4000);
-
-console.log("Hero Slider is running");
-
+</script>
 </body>
 
 </html>
