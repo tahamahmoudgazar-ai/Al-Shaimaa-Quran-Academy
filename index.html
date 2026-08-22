@@ -1245,13 +1245,19 @@ const heroCourses = [
 const heroImage = document.getElementById("hero-course-image");
 const heroLink = document.getElementById("hero-course-link");
 const heroTitle = document.getElementById("hero-course-title");
-const heroSlider = document.querySelector(".hero-course-slider");
 
 let heroIndex = 0;
+let heroAnimating = false;
 
-setInterval(() => {
+function changeHeroCourse() {
 
-    heroSlider.classList.add("hero-course-changing");
+    if (heroAnimating) return;
+
+    heroAnimating = true;
+
+    
+
+    heroImage.classList.add("hero-slide-out");
 
     setTimeout(() => {
 
@@ -1259,19 +1265,39 @@ setInterval(() => {
 
         const course = heroCourses[heroIndex];
 
+        
+
         heroImage.src = course.image;
         heroImage.alt = course.title;
 
         heroLink.href = course.link;
-        heroLink.setAttribute("aria-label", course.title);
+        heroLink.setAttribute(
+            "aria-label",
+            course.title
+        );
 
         heroTitle.textContent = course.title;
 
-        heroSlider.classList.remove("hero-course-changing");
+        
 
-    }, 500);
+        heroImage.classList.remove("hero-slide-out");
+        heroImage.classList.add("hero-slide-in");
 
-}, 4000);
+        setTimeout(() => {
+
+            heroImage.classList.remove("hero-slide-in");
+
+            heroAnimating = false;
+
+        }, 700);
+
+    }, 700);
+}
+
+
+
+
+setInterval(changeHeroCourse, 4000);
 </script>
 </body>
 
