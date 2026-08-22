@@ -348,10 +348,12 @@
         href="tajweed-course.html"
         aria-label="Tajweed Course"
     >
+
         <div class="hero-course-frame">
 
             <img
-                id="hero-course-image"
+                id="hero-course-current"
+                class="hero-course-img hero-current"
                 src="images/blog-tajweed-importance.jpg"
                 alt="Tajweed Course"
                 width="800"
@@ -360,11 +362,25 @@
                 fetchpriority="high"
             >
 
+            <img
+                id="hero-course-next"
+                class="hero-course-img hero-next"
+                src="images/blog-how-to-memorize-quran-online.jpg"
+                alt=""
+                width="800"
+                height="600"
+                loading="lazy"
+            >
+
             <span id="hero-course-title">
                 Tajweed Course
             </span>
 
         </div>
+
+    </a>
+
+    </div>
     </a>
 
 </div>
@@ -1212,8 +1228,7 @@ One-Year Juz Amma Memorization Plan →
     }, 5000);
 
 </script>
-  
-<script>
+  <script>
 const heroCourses = [
     {
         image: "images/blog-tajweed-importance.jpg",
@@ -1242,33 +1257,45 @@ const heroCourses = [
     }
 ];
 
-const heroImage = document.getElementById("hero-course-image");
-const heroLink = document.getElementById("hero-course-link");
-const heroTitle = document.getElementById("hero-course-title");
+const currentImage =
+    document.getElementById("hero-course-current");
+
+const nextImage =
+    document.getElementById("hero-course-next");
+
+const heroLink =
+    document.getElementById("hero-course-link");
+
+const heroTitle =
+    document.getElementById("hero-course-title");
 
 let heroIndex = 0;
-let heroAnimating = false;
+let isAnimating = false;
 
 function changeHeroCourse() {
 
-    if (heroAnimating) return;
+    if (isAnimating) return;
 
-    heroAnimating = true;
+    isAnimating = true;
 
-    
+    const nextIndex =
+        (heroIndex + 1) % heroCourses.length;
 
-    heroImage.classList.add("hero-slide-out");
+    const course =
+        heroCourses[nextIndex];
+
+    nextImage.src = course.image;
+    nextImage.alt = course.title;
+
+    nextImage.classList.add("slide-from-right");
+    currentImage.classList.add("slide-left");
 
     setTimeout(() => {
 
-        heroIndex = (heroIndex + 1) % heroCourses.length;
+        heroIndex = nextIndex;
 
-        const course = heroCourses[heroIndex];
-
-        
-
-        heroImage.src = course.image;
-        heroImage.alt = course.title;
+        currentImage.src = course.image;
+        currentImage.alt = course.title;
 
         heroLink.href = course.link;
         heroLink.setAttribute(
@@ -1276,29 +1303,28 @@ function changeHeroCourse() {
             course.title
         );
 
-        heroTitle.textContent = course.title;
+        heroTitle.textContent =
+            course.title;
 
-        
+        currentImage.classList.remove("slide-left");
+        nextImage.classList.remove("slide-from-right");
 
-        heroImage.classList.remove("hero-slide-out");
-        heroImage.classList.add("hero-slide-in");
+        const followingIndex =
+            (heroIndex + 1) % heroCourses.length;
 
-        setTimeout(() => {
+        nextImage.src =
+            heroCourses[followingIndex].image;
 
-            heroImage.classList.remove("hero-slide-in");
+        nextImage.alt = "";
 
-            heroAnimating = false;
+        isAnimating = false;
 
-        }, 700);
-
-    }, 700);
+    }, 750);
 }
 
-
-
-
 setInterval(changeHeroCourse, 4000);
-</script>
+  </script>
+
 </body>
 
 </html>
