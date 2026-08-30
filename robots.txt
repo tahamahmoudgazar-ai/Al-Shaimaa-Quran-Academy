@@ -20,4 +20,4 @@ Allow: /videos/intro.mp4$
 
 # Sitemap
 Sitemap: https://alshimaaquranacademy.com/sitemap.xml
-Sitemap: https://alshimaaquranacademy.com/blog-sitemap.xml
+
