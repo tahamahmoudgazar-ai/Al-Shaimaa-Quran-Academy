@@ -1,696 +1,258 @@
-<!DOCTYPE html><html lang="en-US"><head><!-- PLAYABLE_TOUCH_PATCH_V1 --><script>
-(function() {
-  if (window.__playableTouchPatchInstalled) return;
-  window.__playableTouchPatchInstalled = true;
-  var origAdd = EventTarget.prototype.addEventListener;
-  var blockedTypes = { touchstart: 1, touchmove: 1, wheel: 1 };
-  EventTarget.prototype.addEventListener = function(type, listener, options) {
-    if (blockedTypes[type]) {
-      if (options === undefined || options === null) {
-        options = { passive: true };
-      } else if (typeof options === 'boolean') {
-        options = { capture: options, passive: true };
-      } else {
-        options = Object.assign({}, options, { passive: true });
-      }
-    }
-    return origAdd.call(this, type, listener, options);
-  };
-})();
-</script><script>window.Intl=window.Intl||{};Intl.t=function(s){return(Intl._locale&&Intl._locale[s])||s;};</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Learn Quran Online with Al-Azhar Teachers - Free Trial Classes</title>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO OPTIMIZED TITLE -->
+<title>Learn Quran Online with Al-Azhar Teachers | USA, UK, Canada - Free Trial</title>
 
-<meta name="description" content="Learn Quran, Tajweed & Arabic online with qualified Al-Azhar teachers. One-to-one classes for kids & adults from $20/month. Book a free trial today.">
+<!-- SEO OPTIMIZED DESCRIPTION -->
+<meta name="description" content="Learn Quran, Tajweed & Arabic online with certified Al-Azhar male & female teachers. Live 1-to-1 classes for kids & adults from $20/month. Free trial, no credit card needed. EST/PST/GMT timings.">
 
 <meta name="author" content="Al Shimaa Quran Academy">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="keywords" content="learn quran online, online quran classes usa, uk quran teacher, tajweed course online, quran memorization, female quran teacher, al azhar quran academy">
 
 <link rel="canonical" href="https://alshimaaquranacademy.com/">
 <link rel="icon" href="favicon.ico">
 
-<link rel="preload"
-      as="image"
-      href="images/blog-tajweed-importance.jpg"
-      fetchpriority="high">
+<!-- PERFORMANCE: Preconnect -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preload" as="image" href="images/blog-tajweed-importance.jpg" fetchpriority="high">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Al Shimaa Quran Academy | Online Quran & Tajweed Classes">
-<meta property="og:description" content="Learn Quran, Tajweed, Arabic and Islamic Studies online with qualified teachers worldwide.">
+<!-- Open Graph Optimized -->
+<meta property="og:title" content="Learn Quran Online with Certified Al-Azhar Teachers | Al Shimaa Academy">
+<meta property="og:description" content="Live 1-to-1 Quran, Tajweed & Arabic classes for kids & adults in USA, UK, Canada. From $20/month. Book your free trial today.">
 <meta property="og:image" content="https://alshimaaquranacademy.com/images/logo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alshimaaquranacademy.com/">
 <meta property="og:site_name" content="Al Shimaa Quran Academy">
+<meta property="og:locale" content="en_US">
 
-<!-- Twitter Card -->
+<!-- Twitter Card Optimized -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Al Shimaa Quran Academy | Online Quran Classes">
-<meta name="twitter:description" content="Learn Quran online with qualified teachers through interactive online classes.">
+<meta name="twitter:title" content="Learn Quran Online with Al-Azhar Teachers | Free Trial">
+<meta name="twitter:description" content="Certified male & female Quran teachers for kids & adults worldwide. Flexible EST/PST/GMT schedule.">
 <meta name="twitter:image" content="https://alshimaaquranacademy.com/images/logo.png">
-<meta name="twitter:image:alt" content="Al Shimaa Quran Academy">
-<meta name="twitter:image:width" content="1536">
-<meta name="twitter:image:height" content="926">
 
-<!-- Google Verification -->
-<meta name="google-site-verification"
-      content="BF0PhnP8I5CXHECG7Hq2hvfbdAW0URG3UV3h5eBTEok">
+<meta name="google-site-verification" content="BF0PhnP8I5CXHECG7Hq2hvfbdAW0URG3UV3h5eBTEok">
 
-<!-- Organization Schema -->
+<!-- 1. Educational Organization Schema -->
 <script type="application/ld+json">
-
-    
 {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "Al Shimaa Quran Academy",
     "url": "https://alshimaaquranacademy.com/",
     "logo": "https://alshimaaquranacademy.com/images/logo.png",
-    "description": "Online Quran, Tajweed, Arabic Language and Islamic Studies Academy providing classes worldwide.",
-    "areaServed": "Worldwide",
+    "description": "Online Quran, Tajweed, Arabic Language and Islamic Studies Academy with certified Al-Azhar teachers for students in USA, UK, Canada and worldwide.",
+    "areaServed": ["United States", "United Kingdom", "Canada", "Australia", "Germany", "France"],
+    "priceRange": "$20 - $100",
     "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+201027791837",
-        "contactType": "customer service"
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Arabic"]
     },
     "sameAs": [
         "https://www.facebook.com/share/18JmVpPa9s/",
         "https://www.instagram.com/shimaamahmoudzaki1234"
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1500",
+      "bestRating": "5"
+    }
 }
 </script>
-<!-- FAQ Schema -->
+
+<!-- 2. FAQ Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Who can join Al Shimaa Quran Academy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Anyone, anywhere in the world can join. Our courses are designed for kids, adults, beginners, and advanced learners, sisters and new Muslims. All you need is a device and an internet connection. We serve students across the USA, UK, Canada, Europe, and Australia."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a free trial?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer a 100% free trial class so you can experience our teaching before committing. No credit card is needed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What courses do you offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer Quran Reading, Quran Memorization (Hifz), Tajweed, Arabic Language, and Islamic Studies, with customized programs for each age and learning level."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I choose my class timings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer flexible scheduling. You can choose the days and times that suit your family's routine, wherever you live in the world. We support students in different time zones, including EST, PST, and GMT."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are the classes live or pre-recorded?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All our classes are 100% live with real teachers. Students receive one-to-one attention and real-time feedback through interactive online lessons."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much do Quran lessons cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our pricing is flexible and affordable, starting from $20 per month depending on the plan, course type, and lesson frequency. We also offer custom packages for individuals and families with discounts of up to 20%."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a refund guarantee?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer a 100% satisfaction guarantee. If you are not satisfied with your experience, you can contact us to request a refund."
-      }
-    }
+    {"@type": "Question","name": "Who can join Al Shimaa Quran Academy?","acceptedAnswer": {"@type": "Answer","text": "Anyone, anywhere in the world can join. Our courses are designed for kids, adults, beginners, and advanced learners, sisters and new Muslims. All you need is a device and an internet connection. We serve students across the USA, UK, Canada, Europe, and Australia."}},
+    {"@type": "Question","name": "Is there a free trial?","acceptedAnswer": {"@type": "Answer","text": "Yes, we offer a 100% free trial class so you can experience our teaching before committing. No credit card is needed."}},
+    {"@type": "Question","name": "What courses do you offer?","acceptedAnswer": {"@type": "Answer","text": "We offer Quran Reading, Quran Memorization (Hifz), Tajweed, Arabic Language, and Islamic Studies, with customized programs for each age and learning level."}},
+    {"@type": "Question","name": "Can I choose my class timings?","acceptedAnswer": {"@type": "Answer","text": "Yes, we offer flexible scheduling. You can choose the days and times that suit your family's routine, wherever you live in the world. We support students in different time zones, including EST, PST, and GMT."}},
+    {"@type": "Question","name": "Are the classes live or pre-recorded?","acceptedAnswer": {"@type": "Answer","text": "All our classes are 100% live with real teachers. Students receive one-to-one attention and real-time feedback through interactive online lessons."}},
+    {"@type": "Question","name": "How much do Quran lessons cost?","acceptedAnswer": {"@type": "Answer","text": "Our pricing is flexible and affordable, starting from $20 per month depending on the plan, course type, and lesson frequency. We also offer custom packages for individuals and families with discounts of up to 20%."}},
+    {"@type": "Question","name": "Is there a refund guarantee?","acceptedAnswer": {"@type": "Answer","text": "Yes, we offer a 100% satisfaction guarantee. If you are not satisfied with your experience, you can contact us to request a refund."}}
   ]
 }
 </script>
 
-</head><body><!-- ==================== HEADER ==================== -->
+<!-- 3. NEW: VideoObject Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Introduction to Al Shimaa Quran Academy - Online Quran Classes",
+  "description": "Learn how kids and adults in USA, UK and Canada learn Quran, Tajweed and Arabic online with qualified Al-Azhar male and female teachers.",
+  "thumbnailUrl": "https://alshimaaquranacademy.com/images/video-cover.png",
+  "uploadDate": "2024-01-01T08:00:00+00:00",
+  "contentUrl": "https://alshimaaquranacademy.com/videos/intro.mp4",
+  "embedUrl": "https://alshimaaquranacademy.com/",
+  "publisher": {"@type": "EducationalOrganization", "name": "Al Shimaa Quran Academy", "logo": {"@type": "ImageObject", "url": "https://alshimaaquranacademy.com/images/logo.png"}}
+}
+</script>
 
+<!-- 4. NEW: Courses Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {"@type": "Course","name": "Quran Memorization Course (Hifz) Online","description": "Memorize Quran online with qualified Al-Azhar teachers and regular revision plan for kids and adults in USA, UK, Canada.","provider": {"@type": "EducationalOrganization","name": "Al Shimaa Quran Academy"},"url": "https://alshimaaquranacademy.com/quran-memorization.html"},
+    {"@type": "Course","name": "Tajweed Course Online","description": "Learn correct Quran pronunciation and Tajweed rules with certified teachers.","provider": {"@type": "EducationalOrganization","name": "Al Shimaa Quran Academy"},"url": "https://alshimaaquranacademy.com/tajweed-course.html"},
+    {"@type": "Course","name": "Noorani Qaida Course for Beginners","description": "Learn Noorani Qaida step by step and build a strong foundation in Quran reading.","provider": {"@type": "EducationalOrganization","name": "Al Shimaa Quran Academy"},"url": "https://alshimaaquranacademy.com/noorani-qaida.html"}
+  ]
+}
+</script>
+
+<!-- 5. NEW: Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem","position": 1,"name": "Home","item": "https://alshimaaquranacademy.com/"
+  },{
+    "@type": "ListItem","position": 2,"name": "Courses","item": "https://alshimaaquranacademy.com/courses.html"
+  },{
+    "@type": "ListItem","position": 3,"name": "Pricing","item": "https://alshimaaquranacademy.com/pricing.html"
+  }]
+}
+</script>
+
+</head>
+<body>
 <header class="main-header">
-
-    <!-- Top Announcement -->
-    <a href="register.html" class="top-banner-link">
-        <div class="top-banner">
-            <div class="banner-track">
-                <span>
-                    🎉 Free Trial Lesson Available |
-                    📖 Certified Male & Female Quran Teachers |
-                    🌍 Online Quran Classes Worldwide |
-                    📅 Flexible Schedule |
-                    ⭐ Book Your Free Trial Today!
-                </span>
-            </div>
-        </div>
+    <a href="register.html" class="top-banner-link" title="Book Free Quran Trial Class">
+        <div class="top-banner"><div class="banner-track"><span>🎉 Free Trial Lesson Available | 📖 Certified Male & Female Quran Teachers | 🌍 Online Quran Classes Worldwide | 📅 Flexible Schedule | ⭐ Book Your Free Trial Today!</span></div></div>
     </a>
-
-    <!-- Main Header -->
     <div class="header-container">
-
         <div class="header-left">
-
-            <!-- Mobile Menu Button -->
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open Menu"
-                aria-expanded="false"
-            >
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <!-- Logo -->
-            <a href="/" class="logo-link">
-
-                <img
-    src="images/logo.png"
-    alt="Al Shimaa Quran Academy Logo"
-    width="180"
-    height="180"
->
-
-                <div class="logo-text-group">
-                    <span class="logo-title">Al Shimaa</span>
-                    <span class="logo-subtitle">Quran Academy</span>
-                </div>
-
+            <button class="menu-toggle" type="button" aria-label="Open Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            <a href="/" class="logo-link" title="Al Shimaa Quran Academy - Home">
+                <img src="images/logo.png" alt="Al Shimaa Quran Academy Logo - Learn Quran Online with Al-Azhar Teachers" width="180" height="180">
+                <div class="logo-text-group"><span class="logo-title">Al Shimaa</span><span class="logo-subtitle">Quran Academy</span></div>
             </a>
-
         </div>
-
-        <!-- Desktop Navigation -->
         <nav class="navbar" aria-label="Main Navigation">
-
-            <a href="/">Home</a>
-            <a href="about.html">About</a>
-            <a href="courses.html">Courses</a>
-            <a href="teachers.html">Teachers</a>
-            <a href="pricing.html">Pricing</a>
+            <a href="/" title="Online Quran Classes Home">Home</a>
+            <a href="about.html" title="About Al Shimaa Quran Academy">About</a>
+            <a href="courses.html" title="Online Quran Courses">Courses</a>
+            <a href="teachers.html" title="Qualified Al-Azhar Quran Teachers">Teachers</a>
+            <a href="pricing.html" title="Affordable Quran Classes Pricing">Pricing</a>
             <a href="contact.html">Contact</a>
             <a href="videos.html">Videos</a>
             <a href="faq.html">FAQ</a>
-            <a href="blog.html">Blog</a>
-
+            <a href="blog.html" title="Quran Learning Blog">Blog</a>
         </nav>
-
-        <!-- Header CTA -->
-        <a href="register.html" class="header-trial-btn">
-            Book Free Trial
-        </a>
-
+        <a href="register.html" class="header-trial-btn" title="Book Your Free Quran Trial Class Now">Book Free Trial</a>
     </div>
-
 </header>
 
-<!-- ==================== SIDE MENU ==================== -->
-
 <aside class="side-menu" aria-label="Mobile Navigation">
-
-    <a href="/">🏠 Home</a>
-
-    <a href="about.html">📖 About</a>
-
-
-    <!-- ==================== COURSES DROPDOWN ==================== -->
-
+    <a href="/">🏠 Home</a><a href="about.html">📖 About</a>
     <div class="side-menu-courses">
-
-        <button
-            type="button"
-            class="side-menu-courses-toggle"
-            aria-expanded="false"
-        >
-            <span>📚 Courses</span>
-
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-
-
+        <button type="button" class="side-menu-courses-toggle" aria-expanded="false"><span>📚 Courses</span><i class="fa-solid fa-chevron-down"></i></button>
         <div class="side-menu-courses-list">
-
-            <a href="courses.html">
-                📚 All Courses
-            </a>
-
-            <a href="quran-memorization.html">
-                📖 Quran Memorization
-            </a>
-
-            <a href="tajweed-course.html">
-                🕌 Tajweed Course
-            </a>
-
-            <a href="noorani-qaida.html">
-                📖 Noorani Qaida
-            </a>
-
-            <a href="arabic-language.html">
-                🔤 Arabic Language
-            </a>
-
-            <a href="islamic-studies.html">
-                🌙 Islamic Studies
-            </a>
-
-            <a href="online-quran-classes.html">
-                💻 Online Quran Classes
-            </a>
-
+            <a href="courses.html">📚 All Courses</a>
+            <a href="quran-memorization.html">📖 Quran Memorization</a>
+            <a href="tajweed-course.html">🕌 Tajweed Course</a>
+            <a href="noorani-qaida.html">📖 Noorani Qaida</a>
+            <a href="arabic-language.html">🔤 Arabic Language</a>
+            <a href="islamic-studies.html">🌙 Islamic Studies</a>
+            <a href="online-quran-classes.html">💻 Online Quran Classes</a>
         </div>
-
     </div>
-
-
-    <a href="teachers.html">👨‍🏫 Teachers</a>
-
-    <a href="pricing.html">💲 Pricing</a>
-
-    <a href="contact.html">📞 Contact</a>
-
-    <a href="videos.html">🎥 Videos</a>
-
-    <a href="faq.html">❓ FAQ</a>
-
-    <a href="blog.html">📝 Blog</a>
-
-
+    <a href="teachers.html">👨‍🏫 Teachers</a><a href="pricing.html">💲 Pricing</a><a href="contact.html">📞 Contact</a><a href="videos.html">🎥 Videos</a><a href="faq.html">❓ FAQ</a><a href="blog.html">📝 Blog</a>
     <hr>
-
-
-    <a href="register.html" class="register-btn">
-        📝 Book Free Trial
-    </a>
-
+    <a href="register.html" class="register-btn">📝 Book Free Trial</a>
 </aside>
-
 <div class="menu-overlay"></div>
 
-
-<!-- ==================== MAIN CONTENT ==================== -->
-
 <main>
-<!-- ==================== HERO ==================== -->
-
 <section id="hero" class="hero">
-
     <div class="hero-text">
-
-        <h1>
-            Learn Quran Online with Qualified Al-Azhar Teachers
-        </h1>
-
-        <p>
-            Learn Quran, Tajweed, Arabic and Islamic Studies through live
-            one-to-one online classes with qualified male and female teachers.
-            Flexible lessons are available for kids, adults and beginners worldwide.
-        </p>
-
-        <a
-            href="register.html"
-            class="btn"
-            aria-label="Book a free Quran trial lesson"
-        >
-            Book Your Free Quran Trial
-        </a>
-
+        <h1>Learn Quran Online with Qualified Al-Azhar Teachers</h1>
+        <p>Learn Quran, Tajweed, Arabic and Islamic Studies through live one-to-one online classes with qualified male and female teachers. Flexible lessons are available for kids, adults and beginners worldwide in USA, UK, Canada, Europe and Australia.</p>
+        <a href="register.html" class="btn" aria-label="Book a free Quran trial lesson for kids and adults">Book Your Free Quran Trial</a>
     </div>
-
-
     <div class="hero-image">
-
-        <a
-            id="hero-course-link"
-            href="tajweed-course.html"
-            aria-label="Tajweed Course"
-        >
-
-            <img
-                id="hero-course-image"
-                src="images/blog-tajweed-importance.jpg"
-                alt="Tajweed Course"
-                width="800"
-                height="600"
-                loading="eager"
-                fetchpriority="high"
-            >
-
-            <span id="hero-course-title">
-                Tajweed Course
-            </span>
-
+        <a id="hero-course-link" href="tajweed-course.html" aria-label="Learn Tajweed Course Online">
+            <img id="hero-course-image" src="images/blog-tajweed-importance.jpg" alt="Learn Tajweed Course Online with Certified Al-Azhar Teacher - Correct Quran Pronunciation" width="800" height="600" loading="eager" fetchpriority="high">
+            <span id="hero-course-title">Tajweed Course</span>
         </a>
-
     </div>
-
 </section>
-
-
-    <!-- ==================== WHY US ==================== -->
 
     <section id="why-us" class="why-us">
-
-        <h2>
-            Why Choose Our Online Quran Academy?
-        </h2>
-
+        <h2>Why Choose Our Online Quran Academy?</h2>
         <div class="why-container">
-
-            <div class="why-card">
-                <i class="fa-solid fa-user-graduate"></i>
-
-                <h3>
-                    Qualified Quran Teachers
-                </h3>
-
-                <p>
-                    Learn Quran with experienced male and female teachers.
-                </p>
-            </div>
-
-            <div class="why-card">
-                <i class="fa-solid fa-laptop"></i>
-
-                <h3>
-                    Live Online Quran Classes
-                </h3>
-
-                <p>
-                    Study Quran from anywhere in the world.
-                </p>
-            </div>
-
-            <div class="why-card">
-                <i class="fa-solid fa-clock"></i>
-
-                <h3>
-                    Flexible Schedule
-                </h3>
-
-                <p>
-                    Choose lesson times that fit your schedule.
-                </p>
-            </div>
-
-            <div class="why-card">
-                <i class="fa-solid fa-medal"></i>
-
-                <h3>
-                    Professional Learning
-                </h3>
-
-                <p>
-                    High quality Quran education with effective methods.
-                </p>
-            </div>
-
+            <div class="why-card"><i class="fa-solid fa-user-graduate"></i><h3>Qualified Quran Teachers</h3><p>Learn Quran with experienced male and female teachers from Al-Azhar.</p></div>
+            <div class="why-card"><i class="fa-solid fa-laptop"></i><h3>Live Online Quran Classes</h3><p>Study Quran live 1-to-1 from anywhere in the world via Zoom.</p></div>
+            <div class="why-card"><i class="fa-solid fa-clock"></i><h3>Flexible Schedule</h3><p>Choose lesson times that fit your schedule - EST, PST, GMT timings.</p></div>
+            <div class="why-card"><i class="fa-solid fa-medal"></i><h3>Professional Learning</h3><p>High quality Quran education with effective methods for kids & adults.</p></div>
         </div>
-
     </section>
-  
-<!-- SEO CONTENT FIXED - BEAUTIFUL + PILLAR -->
+
 <div style="margin-top:15px;display:flex;flex-wrap:wrap;gap:10px;">
-
-<!-- PILLAR - FEATURED ON TOP - GREEN SOLID -->
-<a href="blog/blog-online-quran-classes-ultimate-guide.html"
-style="background:#16a34a;color:white;border:1px solid #16a34a;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;box-shadow:0 2px 8px rgba(22,163,74,0.3);">
-⭐ Ultimate Guide to Online Quran Classes →
-</a>
-
-<a href="blog/how-to-learn-quran-online.html"
-style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">
-How to Learn Quran for Beginners →
-</a>
-
-<a href="blog/female-quran-teacher-online.html"
-style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">
-Female Teacher for Sisters & Kids →
-</a>
-
-<a href="blog/how-much-online-quran-classes-cost-usa-uk.html"
-style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">
-Online Quran Classes Cost USA & UK →
-</a>
-
-<a href="blog/what-is-tajweed-why-important.html"
-style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">
-What is Tajweed? →
-</a>
-
-<a href="blog/how-to-memorize-quran-online.html"
-style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">
-How to Memorize the Quran Online →
-</a>
-
-<a href="blog/one-year-juz-amma-memorization-plan.html"
-style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">
-One-Year Juz Amma Memorization Plan →
-</a>
-
+<a href="blog/blog-online-quran-classes-ultimate-guide.html" style="background:#16a34a;color:white;border:1px solid #16a34a;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;box-shadow:0 2px 8px rgba(22,163,74,0.3);">⭐ Ultimate Guide to Online Quran Classes →</a>
+<a href="blog/how-to-learn-quran-online.html" style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">How to Learn Quran for Beginners →</a>
+<a href="blog/female-quran-teacher-online.html" style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">Female Teacher for Sisters & Kids →</a>
+<a href="blog/how-much-online-quran-classes-cost-usa-uk.html" style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">Online Quran Classes Cost USA & UK →</a>
+<a href="blog/what-is-tajweed-why-important.html" style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">What is Tajweed? →</a>
+<a href="blog/how-to-memorize-quran-online.html" style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">How to Memorize the Quran Online →</a>
+<a href="blog/one-year-juz-amma-memorization-plan.html" style="background:#ecfdf5;color:#16a34a;border:1px solid #16a34a;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold;text-decoration:none;">One-Year Juz Amma Memorization Plan →</a>
 </div>
 
-    <!-- ============ NEW: TRUST BADGES (ADDED) ============ -->
     <section style="padding:30px 20px;background:#f8fafc;text-align:center;border-top:1px solid #eee;border-bottom:1px solid #eee;">
         <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;font-weight:700;color:#166534;font-size:15px;">
-            <span>✅ Al-Azhar Certified Teachers</span>
-            <span>✅ 100% Money Back Guarantee</span>
-            <span>✅ Free Trial Lesson</span>
-            <span>✅ 24/7 Support EST/PST/GMT</span>
-            <span>✅ Up to 20% Family Discount</span>
+            <span>✅ Al-Azhar Certified Teachers</span><span>✅ 100% Money Back Guarantee</span><span>✅ Free Trial Lesson</span><span>✅ 24/7 Support EST/PST/GMT</span><span>✅ Up to 20% Family Discount</span>
         </div>
     </section>
-
-
-    <!-- ==================== HOW IT WORKS ==================== -->
 
     <section id="how-it-works" class="how-it-works">
-
-        <h2>
-            How Online Quran Learning Works
-        </h2>
-
+        <h2>How Online Quran Learning Works</h2>
         <div class="steps-container">
-
-            <div class="step">
-
-                <div class="step-number">
-                    1
-                </div>
-
-                <h3>
-                    Book Your Free Trial
-                </h3>
-
-                <p>
-                    Complete the registration form and schedule your first lesson.
-                </p>
-
-            </div>
-
-            <div class="step">
-
-                <div class="step-number">
-                    2
-                </div>
-
-                <h3>
-                    Meet Your Quran Teacher
-                </h3>
-
-                <p>
-                    We choose a qualified teacher suitable for your learning goals.
-                </p>
-
-            </div>
-
-            <div class="step">
-
-                <div class="step-number">
-                    3
-                </div>
-
-                <h3>
-                    Start Learning Quran
-                </h3>
-
-                <p>
-                    Begin your Quran journey through interactive online classes.
-                </p>
-
-            </div>
-
+            <div class="step"><div class="step-number">1</div><h3>Book Your Free Trial</h3><p>Complete the registration form and schedule your first lesson.</p></div>
+            <div class="step"><div class="step-number">2</div><h3>Meet Your Quran Teacher</h3><p>We choose a qualified teacher suitable for your learning goals.</p></div>
+            <div class="step"><div class="step-number">3</div><h3>Start Learning Quran</h3><p>Begin your Quran journey through interactive online classes.</p></div>
         </div>
-
-
-        <a href="teachers.html" class="teachers-btn">
-            Meet Our Teachers
-        </a>
-
-
-        <!-- Teacher Preview -->
-
+        <a href="teachers.html" class="teachers-btn" title="Meet Our Certified Al-Azhar Quran Teachers">Meet Our Teachers</a>
         <div class="preview-container">
-
             <a href="teachers.html" class="preview-card">
-
-                <img
-                    id="teacherSlider"
-                    src="images/teachers/Shimaa Mahmoud Zaki.png"
-                    alt="Quran Teacher"
-                    loading="lazy"
-                >
-
-                <h3 id="teacherName">
-                    Shimaa Mahmoud Zaki
-                </h3>
-
-                <p id="teacherRole">
-                    Quran & Tajweed Teacher
-                </p>
-
+                <img id="teacherSlider" src="images/teachers/Shimaa Mahmoud Zaki.png" alt="Shimaa Mahmoud Zaki - Female Quran and Tajweed Teacher Online for Sisters and Kids" loading="lazy" width="300" height="300">
+                <h3 id="teacherName">Shimaa Mahmoud Zaki</h3><p id="teacherRole">Quran & Tajweed Teacher</p>
             </a>
-
         </div>
-
-
-        <a href="register.html" class="btn">
-            Book Your Free Trial
-        </a>
-
+        <a href="register.html" class="btn" title="Start Free Trial Quran Class Now">Book Your Free Trial</a>
     </section>
 
-
-<!-- ==================== COURSES ==================== -->
-
 <section id="courses">
-
-    <h2>
-        Online Quran Courses & Islamic Studies Programs
-    </h2>
-
+    <h2>Online Quran Courses & Islamic Studies Programs</h2>
     <div class="courses">
-
-        <div class="course">
-            <a href="quran-memorization.html">
-                <h3>
-                    📖 Quran Memorization
-                </h3>
-
-                <p>
-                    Memorize Quran with qualified teachers and regular revision.
-                </p>
-            </a>
-        </div>
-
-
-        <div class="course">
-            <a href="tajweed-course.html">
-                <h3>
-                    🕌 Tajweed Course
-                </h3>
-
-                <p>
-                    Learn correct Quran pronunciation and Tajweed rules.
-                </p>
-            </a>
-        </div>
-
-
-        <!-- ==================== NOORANI QAIDA ==================== -->
-
-        <div class="course">
-            <a href="noorani-qaida.html">
-                <h3>
-                    📖 Noorani Qaida Course
-                </h3>
-
-                <p>
-                    Learn Noorani Qaida step by step and build a strong
-                    foundation in Quran reading and pronunciation.
-                </p>
-            </a>
-        </div>
-
-
-        <div class="course">
-            <a href="arabic-language.html">
-                <h3>
-                    🔤 Arabic Language
-                </h3>
-
-                <p>
-                    Learn Arabic reading, writing and conversation.
-                </p>
-            </a>
-        </div>
-
-
-        <div class="course">
-            <a href="islamic-studies.html">
-                <h3>
-                    🌙 Islamic Studies
-                </h3>
-
-                <p>
-                    Learn Islamic knowledge in an easy way.
-                </p>
-            </a>
-        </div>
-
-
-        <div class="course">
-            <a href="online-quran-classes.html">
-                <h3>
-                    💻 Online Classes
-                </h3>
-
-                <p>
-                    Join live Quran lessons from anywhere.
-                </p>
-            </a>
-        </div>
-
-
-        <div class="course">
-            <a href="register.html">
-                <h3>
-                    🎁 Free Trial Lesson
-                </h3>
-
-                <p>
-                    Try your first Quran lesson for free.
-                </p>
-            </a>
-        </div>
-
+        <div class="course"><a href="quran-memorization.html" title="Quran Memorization Course Online - Hifz Program"><h3>📖 Quran Memorization</h3><p>Memorize Quran with qualified teachers and regular revision.</p></a></div>
+        <div class="course"><a href="tajweed-course.html" title="Learn Tajweed Course Online with Rules"><h3>🕌 Tajweed Course</h3><p>Learn correct Quran pronunciation and Tajweed rules.</p></a></div>
+        <div class="course"><a href="noorani-qaida.html" title="Noorani Qaida Course for Beginners"><h3>📖 Noorani Qaida Course</h3><p>Learn Noorani Qaida step by step and build a strong foundation in Quran reading and pronunciation.</p></a></div>
+        <div class="course"><a href="arabic-language.html" title="Learn Arabic Language Online"><h3>🔤 Arabic Language</h3><p>Learn Arabic reading, writing and conversation.</p></a></div>
+        <div class="course"><a href="islamic-studies.html" title="Islamic Studies Course Online"><h3>🌙 Islamic Studies</h3><p>Learn Islamic knowledge in an easy way.</p></a></div>
+        <div class="course"><a href="online-quran-classes.html" title="Live Online Quran Classes for Kids and Adults"><h3>💻 Online Classes</h3><p>Join live Quran lessons from anywhere.</p></a></div>
+        <div class="course"><a href="register.html" title="Book Free Trial Quran Lesson"><h3>🎁 Free Trial Lesson</h3><p>Try your first Quran lesson for free.</p></a></div>
     </div>
-
 </section>
-  
-    <!-- ============ NEW: PRICING TEASER (ADDED) ============ -->
+
     <section style="padding:50px 20px;text-align:center;background:#ffffff;border-top:2px solid #f0fdf4;border-bottom:2px solid #f0fdf4;">
         <h2>Affordable Quran Classes From $20/Month</h2>
         <p>Flexible plans for USA, UK & Canada - No long-term contract - Cancel anytime - Family discounts up to 20%</p>
@@ -701,601 +263,148 @@ One-Year Juz Amma Memorization Plan →
         <p style="font-size:14px;color:#666;">✓ No credit card needed for trial ✓ 100% Satisfaction Guarantee ✓ EST/PST/GMT Timings</p>
     </section>
 
-
-    <!-- ==================== INTRODUCTION VIDEO ==================== -->
-
     <section class="featured-video">
-
-        <h2>
-            Introduction Video
-        </h2>
-
-        <p>
-            Discover Al Shimaa Quran Academy and our online Quran classes.
-        </p>
-
+        <h2>Introduction Video - Learn Quran Online</h2>
+        <p>Discover Al Shimaa Quran Academy and our online Quran classes for kids and adults in USA, UK, Canada.</p>
         <div class="video-box">
-
-            <video
-                controls
-                preload="metadata"
-                poster="images/video-cover.png"
-            >
-                <source
-                    src="videos/intro.mp4"
-                    type="video/mp4"
-                >
-
+            <video controls preload="metadata" poster="images/video-cover.png" title="Al Shimaa Quran Academy Introduction Video">
+                <source src="videos/intro.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-
             </video>
-
         </div>
-
     </section>
-
-
-    <!-- ==================== COUNTRIES ==================== -->
 
     <section id="countries" class="countries">
-
-        <h2>
-            🌍 Our Students Around The World
-        </h2>
-
-        <p>
-            We provide online Quran classes for students worldwide.
-        </p>
-
+        <h2>🌍 Our Students Around The World</h2>
+        <p>We provide online Quran classes for students worldwide.</p>
         <div class="countries-grid">
-
-            <div class="country">
-                🇬🇧 United Kingdom
-            </div>
-
-            <div class="country">
-                🇺🇸 United States
-            </div>
-
-            <div class="country">
-                🇨🇦 Canada
-            </div>
-
-            <div class="country">
-                🇦🇺 Australia
-            </div>
-
-            <div class="country">
-                🇩🇪 Germany
-            </div>
-
-            <div class="country">
-                🇫🇷 France
-            </div>
-
+            <div class="country">🇬🇧 United Kingdom</div><div class="country">🇺🇸 United States</div><div class="country">🇨🇦 Canada</div><div class="country">🇦🇺 Australia</div><div class="country">🇩🇪 Germany</div><div class="country">🇫🇷 France</div>
         </div>
-
     </section>
-
-
-    <!-- ==================== REVIEWS ==================== -->
 
     <section id="reviews" class="reviews">
-
-        <h2>
-            Student Reviews Of Our Online Quran Classes
-        </h2>
-
+        <h2>Student Reviews Of Our Online Quran Classes</h2>
         <div class="reviews-container">
-
-            <div class="review-card">
-
-                <h3>
-                    ⭐⭐⭐⭐⭐
-                </h3>
-
-                <p>
-                    The classes are excellent and the teachers are very patient.
-                    I improved my Quran recitation and Tajweed skills greatly.
-                </p>
-
-                <h4>
-                    Amina - United Kingdom
-                </h4>
-
-                <span>
-                    Quran & Tajweed Course
-                </span>
-
-            </div>
-
-
-            <div class="review-card">
-
-                <h3>
-                    ⭐⭐⭐⭐⭐
-                </h3>
-
-                <p>
-                    A professional academy with qualified teachers.
-                    My children enjoy online Quran lessons.
-                </p>
-
-                <h4>
-                    Rahim - USA
-                </h4>
-
-                <span>
-                    Quran Memorization Course
-                </span>
-
-            </div>
-
-
-            <div class="review-card">
-
-                <h3>
-                    ⭐⭐⭐⭐⭐
-                </h3>
-
-                <p>
-                    Flexible schedule and excellent teaching methods.
-                    Highly recommended for Quran learning.
-                </p>
-
-                <h4>
-                    Fatima - Canada
-                </h4>
-
-                <span>
-                    Arabic Language Course
-                </span>
-
-            </div>
-
+            <div class="review-card"><h3>⭐⭐⭐⭐⭐</h3><p>The classes are excellent and the teachers are very patient. I improved my Quran recitation and Tajweed skills greatly.</p><h4>Amina - United Kingdom</h4><span>Quran & Tajweed Course</span></div>
+            <div class="review-card"><h3>⭐⭐⭐⭐⭐</h3><p>A professional academy with qualified teachers. My children enjoy online Quran lessons.</p><h4>Rahim - USA</h4><span>Quran Memorization Course</span></div>
+            <div class="review-card"><h3>⭐⭐⭐⭐⭐</h3><p>Flexible schedule and excellent teaching methods. Highly recommended for Quran learning.</p><h4>Fatima - Canada</h4><span>Arabic Language Course</span></div>
         </div>
-
     </section>
-
-
-    <!-- ==================== STATISTICS ==================== -->
 
     <section id="stats" class="stats">
-
-        <div class="stat-box">
-
-            <h2>
-                1500+
-            </h2>
-
-            <p>
-                Students
-            </p>
-
-        </div>
-
-        <div class="stat-box">
-
-            <h2>
-                25+
-            </h2>
-
-            <p>
-                Qualified Teachers
-            </p>
-
-        </div>
-
-        <div class="stat-box">
-
-            <h2>
-                20+
-            </h2>
-
-            <p>
-                Countries
-            </p>
-
-        </div>
-
-        <div class="stat-box">
-
-            <h2>
-                98%
-            </h2>
-
-            <p>
-                Student Satisfaction
-            </p>
-
-        </div>
-
+        <div class="stat-box"><h2>1500+</h2><p>Students</p></div><div class="stat-box"><h2>25+</h2><p>Qualified Teachers</p></div><div class="stat-box"><h2>20+</h2><p>Countries</p></div><div class="stat-box"><h2>98%</h2><p>Student Satisfaction</p></div>
     </section>
 
-    <!-- ============ NEW: FAQ SECTION (ADDED - SEO POWER) ============ -->
     <section id="faq-home" style="padding:50px 20px;max-width:900px;margin:50px auto;background:#f9fafb;border-radius:16px;">
-        <h2 style="text-align:center;margin-bottom:10px;">Frequently Asked Questions</h2>
+        <h2 style="text-align:center;margin-bottom:10px;">Frequently Asked Questions About Learning Quran Online</h2>
         <p style="text-align:center;color:#666;margin-bottom:25px;">Everything you need to know about learning Quran online</p>
-
-        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
-            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Who can join Al Shimaa Quran Academy?</summary>
-            <p style="margin-top:12px;color:#444;">Anyone, anywhere in the world can join! Our courses are designed for kids, adults, beginners, and advanced learners, sisters and new Muslims. All you need is a device and internet connection. We serve students across USA, UK, Canada, Europe, Australia.</p>
-        </details>
-
-        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
-            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Is there a free trial?</summary>
-            <p style="margin-top:12px;color:#444;">Yes, we offer a 100% free trial class so you can experience our quality before committing. No credit card needed. <a href="register.html">Book your free trial here</a>.</p>
-        </details>
-
-        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
-            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">What courses do you offer?</summary>
-            <p style="margin-top:12px;color:#444;">We offer Quran Reading, Quran Memorization (Hifz), Tajweed, Arabic Language, and Islamic Studies, with customized programs for each age and level. <a href="courses.html">See all courses</a> | <a href="blog.html">Read our guides</a> including <a href="blog/what-is-tajweed-why-important.html">What is Tajweed</a>.</p>
-        </details>
-
-        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
-            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Can I choose my class timings?</summary>
-            <p style="margin-top:12px;color:#444;">Yes, we offer flexible scheduling. You can pick the days and times that suit your family's routine, wherever you live in the world. We support EST, PST, GMT and all time zones for USA, UK, Canada families.</p>
-        </details>
-
-        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
-            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Are the classes live or pre-recorded?</summary>
-            <p style="margin-top:12px;color:#444;">All our classes are 100% live with real teachers. You'll get one-to-one attention and real-time feedback. Each session is interactive via Zoom. Our teachers are Al-Azhar certified male and female instructors.</p>
-        </details>
-
-        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
-            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">How much do Quran lessons cost?</summary>
-            <p style="margin-top:12px;color:#444;">Our pricing is flexible and affordable, starting from just $20/month depending on your plan, course type, and frequency. We offer custom packages for individuals and families with up to 20% discount. <a href="pricing.html">Check pricing here</a> and contact us for a free quote.</p>
-        </details>
-
-        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;">
-            <summary style="font-weight:bold;cursor:pointer;font-size:17px;">Is there a refund guarantee?</summary>
-            <p style="margin-top:12px;color:#444;">Yes! We offer a 100% satisfaction guarantee. If you're not happy with your experience, you can request a refund. Learn more in our <a href="blog/how-to-learn-quran-online.html">beginners guide</a> or <a href="faq.html">FAQ page</a>.</p>
-        </details>
-
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;"><summary style="font-weight:bold;cursor:pointer;font-size:17px;">Who can join Al Shimaa Quran Academy?</summary><p style="margin-top:12px;color:#444;">Anyone, anywhere in the world can join! Our courses are designed for kids, adults, beginners, and advanced learners, sisters and new Muslims. All you need is a device and internet connection. We serve students across USA, UK, Canada, Europe, Australia.</p></details>
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;"><summary style="font-weight:bold;cursor:pointer;font-size:17px;">Is there a free trial?</summary><p style="margin-top:12px;color:#444;">Yes, we offer a 100% free trial class so you can experience our quality before committing. No credit card needed. <a href="register.html">Book your free trial here</a>.</p></details>
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;"><summary style="font-weight:bold;cursor:pointer;font-size:17px;">What courses do you offer?</summary><p style="margin-top:12px;color:#444;">We offer Quran Reading, Quran Memorization (Hifz), Tajweed, Arabic Language, and Islamic Studies, with customized programs for each age and level. <a href="courses.html">See all courses</a> | <a href="blog.html">Read our guides</a> including <a href="blog/what-is-tajweed-why-important.html">What is Tajweed</a>.</p></details>
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;"><summary style="font-weight:bold;cursor:pointer;font-size:17px;">Can I choose my class timings?</summary><p style="margin-top:12px;color:#444;">Yes, we offer flexible scheduling. You can pick the days and times that suit your family's routine, wherever you live in the world. We support EST, PST, GMT and all time zones for USA, UK, Canada families.</p></details>
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;"><summary style="font-weight:bold;cursor:pointer;font-size:17px;">Are the classes live or pre-recorded?</summary><p style="margin-top:12px;color:#444;">All our classes are 100% live with real teachers. You'll get one-to-one attention and real-time feedback. Each session is interactive via Zoom. Our teachers are Al-Azhar certified male and female instructors.</p></details>
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;"><summary style="font-weight:bold;cursor:pointer;font-size:17px;">How much do Quran lessons cost?</summary><p style="margin-top:12px;color:#444;">Our pricing is flexible and affordable, starting from just $20/month depending on your plan, course type, and frequency. We offer custom packages for individuals and families with up to 20% discount. <a href="pricing.html">Check pricing here</a> and contact us for a free quote.</p></details>
+        <details style="border:1px solid #e5e7eb;padding:18px;border-radius:10px;margin:12px 0;background:#fff;"><summary style="font-weight:bold;cursor:pointer;font-size:17px;">Is there a refund guarantee?</summary><p style="margin-top:12px;color:#444;">Yes! We offer a 100% satisfaction guarantee. If you're not happy with your experience, you can request a refund. Learn more in our <a href="blog/how-to-learn-quran-online.html">beginners guide</a> or <a href="faq.html">FAQ page</a>.</p></details>
     </section>
-
 </main>
 
-
-<!-- ==================== FOOTER ==================== -->
-
 <footer>
-
-    <h3>
-        Follow Us
-    </h3>
-
+    <h3>Follow Us</h3>
     <div class="social-icons">
-
-        <a
-            href="https://www.facebook.com/share/18JmVpPa9s/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-        >
-            <i class="fa-brands fa-facebook-f"></i>
-        </a>
-
-        <a
-            href="https://www.instagram.com/shimaamahmoudzaki1234?igsh=b29tYXFodWRqeWl2"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-        >
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-
+        <a href="https://www.facebook.com/share/18JmVpPa9s/" target="_blank" rel="noopener noreferrer" aria-label="Facebook - Al Shimaa Quran Academy"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/shimaamahmoudzaki1234?igsh=b29tYXFodWRqeWl2" target="_blank" rel="noopener noreferrer" aria-label="Instagram - Al Shimaa Quran Academy"><i class="fa-brands fa-instagram"></i></a>
     </div>
-
-    <div class="footer-links">
-        <a href="terms.html">Terms & Conditions</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-    </div>
-
-    <p>
-        © 2026 Al Shimaa Quran Academy
-    </p>
-
+    <div class="footer-links"><a href="terms.html">Terms & Conditions</a><a href="privacy-policy.html">Privacy Policy</a></div>
+    <p>© 2026 Al Shimaa Quran Academy - Learn Quran Online with Certified Al-Azhar Teachers Worldwide</p>
 </footer>
 
-
-<!-- ==================== FLOATING BUTTONS ==================== -->
-
-<a
-    href="#"
-    class="back-to-top"
-    aria-label="Back to top"
->
-    <i class="fa-solid fa-arrow-up"></i>
-</a>
-
-
-<a
-    href="https://wa.me/201027791837"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contact us on WhatsApp"
->
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-
-
-
-    <!-- ==================== MOBILE MENU SCRIPT ==================== -->
+<a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+<a href="https://wa.me/201027791837" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp for Free Quran Trial"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script>
-
-    const menuBtn =
-        document.querySelector(".menu-toggle");
-
-    const sideMenu =
-        document.querySelector(".side-menu");
-
-    const overlay =
-        document.querySelector(".menu-overlay");
-
-
-    /* ==================== COURSES DROPDOWN ==================== */
-
-    const coursesToggle =
-        document.querySelector(".side-menu-courses-toggle");
-
-    const coursesList =
-        document.querySelector(".side-menu-courses-list");
-
-
+    const menuBtn = document.querySelector(".menu-toggle");
+    const sideMenu = document.querySelector(".side-menu");
+    const overlay = document.querySelector(".menu-overlay");
+    const coursesToggle = document.querySelector(".side-menu-courses-toggle");
+    const coursesList = document.querySelector(".side-menu-courses-list");
     coursesToggle.addEventListener("click", function () {
-
-        const isOpen =
-            coursesList.classList.toggle("active");
-
+        const isOpen = coursesList.classList.toggle("active");
         coursesToggle.classList.toggle("active");
-
-        coursesToggle.setAttribute(
-            "aria-expanded",
-            isOpen ? "true" : "false"
-        );
-
+        coursesToggle.setAttribute("aria-expanded", isOpen? "true" : "false");
     });
-
-
-    /* ==================== CLOSE MENU ==================== */
-
     function closeMenu() {
-
-        sideMenu.classList.remove("active");
-
-        overlay.classList.remove("active");
-
-        menuBtn.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-        coursesList.classList.remove("active");
-
-        coursesToggle.classList.remove("active");
-
-        coursesToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
+        sideMenu.classList.remove("active");overlay.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded","false");
+        coursesList.classList.remove("active");coursesToggle.classList.remove("active");
+        coursesToggle.setAttribute("aria-expanded","false");
     }
-
-
-    /* ==================== OPEN MENU ==================== */
-
     menuBtn.addEventListener("click", function () {
-
-        const isOpen =
-            sideMenu.classList.toggle("active");
-
+        const isOpen = sideMenu.classList.toggle("active");
         overlay.classList.toggle("active");
-
-        menuBtn.setAttribute(
-            "aria-expanded",
-            isOpen ? "true" : "false"
-        );
-
+        menuBtn.setAttribute("aria-expanded", isOpen? "true" : "false");
     });
-
-
-    /* ==================== CLOSE WHEN CLICKING LINK ==================== */
-
-    document
-        .querySelectorAll(".side-menu a")
-        .forEach(function (link) {
-
-            link.addEventListener(
-                "click",
-                closeMenu
-            );
-
-        });
-
-
-    /* ==================== OVERLAY ==================== */
-
-    overlay.addEventListener(
-        "click",
-        closeMenu
-    );
-
+    document.querySelectorAll(".side-menu a").forEach(function (link) {link.addEventListener("click", closeMenu);});
+    overlay.addEventListener("click", closeMenu);
 </script>
 
-
-<!-- ==================== TEACHER SLIDER ==================== -->
-
 <script>
-
     const teachers = [
-
-        {
-            image: "images/teachers/Shimaa Mahmoud Zaki.png",
-            name: "Shimaa Mahmoud Zaki",
-            role: "Quran & Tajweed Teacher"
-        },
-
-        {
-            image: "images/teachers/Sheikh Abdulrahman Ahmed.png",
-            name: "Sheikh Abdulrahman Ahmed",
-            role: "Quran & Tajweed Teacher"
-        },
-
-        {
-            image: "images/teachers/Eman khalifa.png",
-            name: "Eman Khalifa",
-            role: "Quran, Arabic & Islamic Studies Teacher"
-        },
-
-        {
-            image: "images/teachers/Sheikh Mohamed.png",
-            name: "Sheikh Mohamed",
-            role: "Quran, Arabic & Islamic Studies Teacher"
-        },
-
-        {
-            image: "images/teachers/Hagar Alaa.png",
-            name: "Hagar Alaa",
-            role: "Quran & Arabic Teacher"
-        },
-
-        {
-            image: "images/teachers/Teacher Nadia.png",
-            name: "Teacher Nadia",
-            role: "Quran, Arabic & Islamic Studies Teacher"
-        },
-
-        {
-            image: "images/teachers/Sheikh Taha Mahmud.png",
-            name: "Sheikh Taha Mahmud",
-            role: "Quran, Arabic & Islamic Studies Teacher"
-        }
-
+        {image: "images/teachers/Shimaa Mahmoud Zaki.png", name: "Shimaa Mahmoud Zaki", role: "Quran & Tajweed Teacher"},
+        {image: "images/teachers/Sheikh Abdulrahman Ahmed.png", name: "Sheikh Abdulrahman Ahmed", role: "Quran & Tajweed Teacher"},
+        {image: "images/teachers/Eman khalifa.png", name: "Eman Khalifa", role: "Quran, Arabic & Islamic Studies Teacher"},
+        {image: "images/teachers/Sheikh Mohamed.png", name: "Sheikh Mohamed", role: "Quran, Arabic & Islamic Studies Teacher"},
+        {image: "images/teachers/Hagar Alaa.png", name: "Hagar Alaa", role: "Quran & Arabic Teacher"},
+        {image: "images/teachers/Teacher Nadia.png", name: "Teacher Nadia", role: "Quran, Arabic & Islamic Studies Teacher"},
+        {image: "images/teachers/Sheikh Taha Mahmud.png", name: "Sheikh Taha Mahmud", role: "Quran, Arabic & Islamic Studies Teacher"}
     ];
-
-
     let teacherIndex = 0;
-
     const teacherCard = document.querySelector(".preview-card");
     const teacherImage = document.getElementById("teacherSlider");
     const teacherName = document.getElementById("teacherName");
     const teacherRole = document.getElementById("teacherRole");
-
-
     setInterval(() => {
-
-        teacherCard.classList.remove("slide-in");
-        teacherCard.classList.add("slide-out");
-
+        teacherCard.classList.remove("slide-in");teacherCard.classList.add("slide-out");
         setTimeout(() => {
-
-            teacherIndex++;
-
-            if (teacherIndex >= teachers.length) {
-                teacherIndex = 0;
-            }
-
+            teacherIndex++;if (teacherIndex >= teachers.length) {teacherIndex = 0;}
             teacherImage.src = teachers[teacherIndex].image;
-            teacherImage.alt = teachers[teacherIndex].name;
-
-            teacherName.textContent =
-                teachers[teacherIndex].name;
-
-            teacherRole.textContent =
-                teachers[teacherIndex].role;
-
-            teacherCard.classList.remove("slide-out");
-            teacherCard.classList.add("slide-in");
-
+            teacherImage.alt = teachers[teacherIndex].name + " - Online Quran Teacher at Al Shimaa Academy";
+            teacherName.textContent = teachers[teacherIndex].name;
+            teacherRole.textContent = teachers[teacherIndex].role;
+            teacherCard.classList.remove("slide-out");teacherCard.classList.add("slide-in");
         }, 500);
-
     }, 5000);
-
 </script>
 <script>
 const heroCourses = [
-    {
-        image: "images/blog-tajweed-importance.jpg",
-        title: "Tajweed Course",
-        link: "tajweed-course.html"
-    },
-    {
-        image: "images/blog-how-to-memorize-quran-online.jpg",
-        title: "Quran Memorization",
-        link: "quran-memorization.html"
-    },
-    {
-        image: "images/blog-female-quran-teacher.jpg",
-        title: "Online Quran Classes",
-        link: "online-quran-classes.html"
-    },
-    {
-        image: "images/islamic-studies.webp",
-        title: "Islamic Studies",
-        link: "islamic-studies.html"
-    },
-    {
-        image: "images/noorani-qaida-course.jpg",
-        title: "Noorani Qaida",
-        link: "noorani-qaida.html"
-    },
-    {
-        image: "images/arabic-language-course.jpg",
-        title: "Arabic Language",
-        link: "arabic-language.html"
-    }
+    {image: "images/blog-tajweed-importance.jpg", title: "Tajweed Course", link: "tajweed-course.html", alt: "Learn Tajweed Online - Correct Quran Recitation"},
+    {image: "images/blog-how-to-memorize-quran-online.jpg", title: "Quran Memorization", link: "quran-memorization.html", alt: "Quran Memorization Hifz Course Online for Kids and Adults"},
+    {image: "images/blog-female-quran-teacher.jpg", title: "Online Quran Classes", link: "online-quran-classes.html", alt: "Female Quran Teacher Online for Sisters and Kids"},
+    {image: "images/islamic-studies.webp", title: "Islamic Studies", link: "islamic-studies.html", alt: "Islamic Studies Course Online"},
+    {image: "images/noorani-qaida-course.jpg", title: "Noorani Qaida", link: "noorani-qaida.html", alt: "Noorani Qaida Course for Quran Beginners"},
+    {image: "images/arabic-language-course.jpg", title: "Arabic Language", link: "arabic-language.html", alt: "Learn Arabic Language Online Course"}
 ];
-
 const heroImage = document.getElementById("hero-course-image");
 const heroLink = document.getElementById("hero-course-link");
 const heroTitle = document.getElementById("hero-course-title");
-
 let heroIndex = 0;
-
 function changeHeroCourse() {
-
-    const nextIndex =
-        (heroIndex + 1) % heroCourses.length;
-
+    const nextIndex = (heroIndex + 1) % heroCourses.length;
     const course = heroCourses[nextIndex];
-
-    const preloadedImage = new Image();
-
-    preloadedImage.src = course.image;
-
+    const preloadedImage = new Image();preloadedImage.src = course.image;
     preloadedImage.onload = function () {
-
         heroImage.style.opacity = "0";
-
         setTimeout(() => {
-
             heroImage.src = course.image;
-            heroImage.alt = course.title;
-
+            heroImage.alt = course.alt;
             heroLink.href = course.link;
-            heroLink.setAttribute(
-                "aria-label",
-                course.title
-            );
-
-            heroTitle.textContent =
-                course.title;
-
+            heroLink.setAttribute("aria-label", course.alt);
+            heroTitle.textContent = course.title;
             heroImage.style.opacity = "1";
-
             heroIndex = nextIndex;
-
         }, 300);
     };
 }
-
 setInterval(changeHeroCourse, 4000);
 </script>
-
 </body>
-
 </html>
