@@ -1,243 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- ==================== MAIN PAGES ==================== -->
-
+  <!-- MAIN PAGES - Highest Priority -->
   <url>
     <loc>https://alshimaaquranacademy.com/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/about.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/courses.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/teachers.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/pricing.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
   <url>
     <loc>https://alshimaaquranacademy.com/register.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://alshimaaquranacademy.com/contact.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.5</priority>
+    <loc>https://alshimaaquranacademy.com/pricing.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://alshimaaquranacademy.com/videos.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/faq.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.5</priority>
-  </url>
-
-
-  <!-- ==================== COURSE PAGES ==================== -->
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/noorani-qaida.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/quran-memorization.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/tajweed-course.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/online-quran-classes.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/arabic-language.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/islamic-studies.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-
-  <!-- ==================== BLOG ARTICLES ==================== -->
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/blog-online-quran-classes-ultimate-guide.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <loc>https://alshimaaquranacademy.com/courses.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- COURSE PAGES - Money Pages -->
+  <url><loc>https://alshimaaquranacademy.com/tajweed-course.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/quran-memorization.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/online-quran-classes.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/noorani-qaida.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/arabic-language.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/islamic-studies.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- PILLAR BLOG - Your Most Important Article -->
   <url>
-    <loc>https://alshimaaquranacademy.com/blog/blog-noorani-qaida-online.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.8</priority>
+    <loc>https://alshimaaquranacademy.com/blog/blog-online-quran-classes-ultimate-guide.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-to-learn-quran-online.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
+  <!-- INFO PAGES -->
+  <url><loc>https://alshimaaquranacademy.com/about.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/teachers.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog.html</loc><lastmod>2026-08-30</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/faq.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/contact.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/videos.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-to-improve-quran-reading.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
+  <!-- BLOG ARTICLES - Supporting Content -->
+  <url><loc>https://alshimaaquranacademy.com/blog/female-quran-teacher-online.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-much-online-quran-classes-cost-usa-uk.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-to-memorize-quran-online.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/what-is-tajweed-why-important.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-to-learn-quran-online.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/best-online-quran-classes-for-kids-usa.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/online-quran-classes-uk.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/online-quran-classes-kids-canada.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/online-quran-classes-adults-usa.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/one-year-juz-amma-memorization-plan.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-to-improve-quran-reading.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/blog-noorani-qaida-online.html</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-to-choose-online-quran-teacher-child.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-long-memorize-quran.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/quran-memorization-for-kids.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-to-teach-kids-quran-at-home.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/balance-quran-memorization-school.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-to-keep-child-motivated-quran-online.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/blog/how-much-time-kids-quran-learning.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/online-quran-classes-uk.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/what-is-tajweed-why-important.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/best-online-quran-classes-for-kids-usa.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/female-quran-teacher-online.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-to-memorize-quran-online.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/online-quran-classes-kids-canada.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/one-year-juz-amma-memorization-plan.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-much-online-quran-classes-cost-usa-uk.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/online-quran-classes-adults-usa.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-to-choose-online-quran-teacher-child.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-long-memorize-quran.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-to-keep-child-motivated-quran-online.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/balance-quran-memorization-school.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/quran-memorization-for-kids.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-to-teach-kids-quran-at-home.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/blog/how-much-time-kids-quran-learning.html</loc>
-    <lastmod>2026-08-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-
-  <!-- ==================== LEGAL PAGES ==================== -->
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/terms.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <priority>0.2</priority>
-  </url>
-
-  <url>
-    <loc>https://alshimaaquranacademy.com/privacy-policy.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <priority>0.2</priority>
-  </url>
-
+  <!-- LEGAL - Lowest Priority -->
+  <url><loc>https://alshimaaquranacademy.com/terms.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://alshimaaquranacademy.com/privacy-policy.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
 </urlset>
