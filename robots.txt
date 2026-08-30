@@ -1,5 +1,23 @@
 User-agent: *
 Allow: /
+
+# Block Cloudflare security files - good
 Disallow: /cdn-cgi/
 
+# Block useless files
+Disallow: /*.json$
+Disallow: /*?*utm_*
+Disallow: /wp-admin/
+Disallow: /private/
+
+# Allow important assets
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.webp$
+Allow: /videos/intro.mp4$
+
+# Sitemap
 Sitemap: https://alshimaaquranacademy.com/sitemap.xml
+Sitemap: https://alshimaaquranacademy.com/blog-sitemap.xml
