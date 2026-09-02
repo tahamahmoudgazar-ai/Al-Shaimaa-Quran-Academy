@@ -89,7 +89,48 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/ijazah-course-online-usa-uk.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/quran-classes-for-toddlers-3-5-years.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/online-quran-classes-for-reverts-new-muslims.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/free-trial-quran-class-what-to-expect.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/arabic-alphabet-for-quran-beginners.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/weekend-quran-classes-kids-usa.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- LEGAL - Lowest Priority -->
   <url><loc>https://alshimaaquranacademy.com/terms.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://alshimaaquranacademy.com/privacy-policy.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
