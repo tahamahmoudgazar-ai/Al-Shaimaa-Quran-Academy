@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><style>
+<head>
+
+<style>
 @font-face {
   font-family: "Optimistic";
   font-style: normal;
@@ -9,6 +11,7 @@
   font-display: swap;
   src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Optimistic Mono";
   font-style: normal;
@@ -16,9 +19,11 @@
   font-display: swap;
   src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
 }
+
 :where(html) {
   font-family: "Optimistic", system-ui, sans-serif;
 }
+
 :where(code, pre, kbd, samp) {
   font-family: "Optimistic Mono", ui-monospace, monospace;
 }
@@ -36,7 +41,9 @@
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://alshimaaquranacademy.com/blog-page-2.html">
+
 <link rel="prev" href="https://alshimaaquranacademy.com/blog.html">
+
 <link rel="next" href="https://alshimaaquranacademy.com/blog-page-3.html">
 
 <link rel="icon" href="favicon.ico">
@@ -97,7 +104,6 @@ content="Quran Learning Blog | Al Shimaa Quran Academy">
 <!-- ==================== COLLECTION PAGE SCHEMA ==================== -->
 
 <script type="application/ld+json">
-
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -118,11 +124,13 @@ content="Quran Learning Blog | Al Shimaa Quran Academy">
     }
   }
 }
-
 </script>
 
+
 <style>
-/* FIX: keep your original images, just fix display */
+
+/* ==================== BLOG IMAGES ==================== */
+
 .blog-card-image {
   width: 100% !important;
   height: 220px !important;
@@ -130,29 +138,47 @@ content="Quran Learning Blog | Al Shimaa Quran Academy">
   object-position: center !important;
   display: block;
 }
+
 .blog-card.featured .blog-card-image {
   height: 320px !important;
 }
+
 @media (max-width: 768px) {
-  .blog-card-image { height: 200px !important; }
-  .blog-card.featured .blog-card-image { height: 220px !important; }
+
+  .blog-card-image {
+    height: 200px !important;
+  }
+
+  .blog-card.featured .blog-card-image {
+    height: 220px !important;
+  }
+
 }
-.blog-pagination a, .blog-pagination span {
-  padding:10px 18px;
-  border-radius:8px;
-  text-decoration:none;
-  display:inline-block;
-}
+
+
+/* ==================== BLOG PAGINATION ==================== */
+
+.blog-pagination a,
 .blog-pagination span {
-  background:#16a34a;
-  color:white;
-  font-weight:bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
 }
+
+.blog-pagination span {
+  background: #16a34a;
+  color: white;
+  font-weight: bold;
+}
+
 .blog-pagination a {
-  border:1px solid #ddd;
-  color:#111;
+  border: 1px solid #ddd;
+  color: #111;
 }
+
 </style>
+
 </head>
 
 
@@ -186,7 +212,6 @@ content="Quran Learning Blog | Al Shimaa Quran Academy">
 <!-- ==================== HEADER CONTAINER ==================== -->
 
 <div class="header-container">
-
 
 <div class="header-left">
 
@@ -266,7 +291,6 @@ Book Free Trial
 
 </a>
 
-
 </div>
 
 </header>
@@ -277,7 +301,6 @@ Book Free Trial
 <aside
 class="side-menu"
 aria-label="Mobile Navigation">
-
 
 <a href="/">🏠 Home</a>
 
@@ -712,6 +735,55 @@ Read the Guide →
 </article>
 
 
+<!-- ==================== PAGINATION ==================== -->
+
+<nav
+class="blog-pagination"
+aria-label="Blog pagination"
+style="text-align:center; margin:40px 0;">
+
+<a
+href="blog.html"
+style="margin:0 8px; font-weight:bold;">
+
+← Previous
+
+</a>
+
+<a
+href="blog.html"
+style="margin:0 8px;">
+
+1
+
+</a>
+
+<span
+style="margin:0 8px; font-weight:bold;">
+
+2
+
+</span>
+
+<a
+href="blog-page-3.html"
+style="margin:0 8px;">
+
+3
+
+</a>
+
+<a
+href="blog-page-3.html"
+style="margin:0 8px; font-weight:bold;">
+
+Next →
+
+</a>
+
+</nav>
+
+
 <!-- ==================== BLOG CTA ==================== -->
 
 <div class="blog-cta">
@@ -734,43 +806,11 @@ Book Your Free Trial
 
 </div>
 
-<!-- ==================== PAGINATION ==================== -->
 
-<nav
-class="blog-pagination"
-aria-label="Blog pagination"
-style="text-align:center; margin:40px 0;">
+</div>
 
-<a
-href="blog.html"
-style="margin:0 8px; font-weight:bold;">
-← Previous
-</a>
+</main>
 
-<a
-href="blog.html"
-style="margin:0 8px;">
-1
-</a>
-
-<span
-style="margin:0 8px; font-weight:bold;">
-2
-</span>
-
-<a
-href="blog-page-3.html"
-style="margin:0 8px;">
-3
-</a>
-
-<a
-href="blog-page-3.html"
-style="margin:0 8px; font-weight:bold;">
-Next →
-</a>
-
-</nav>
 
 <!-- ==================== FOOTER ==================== -->
 
@@ -779,7 +819,6 @@ Next →
 <h3>
 Follow Us
 </h3>
-
 
 <div class="social-icons">
 
@@ -915,7 +954,6 @@ closeMenu
 
 </script>
 
-
-<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
+</body>
 
 </html>
