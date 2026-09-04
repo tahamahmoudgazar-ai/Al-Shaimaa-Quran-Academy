@@ -131,6 +131,49 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+    <url>
+    <loc>https://alshimaaquranacademy.com/blog/what-is-islamic-studies-beginners-guide.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/five-pillars-of-islam-complete-guide.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/six-pillars-of-iman-faith-guide.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/fiqh-made-easy-guide.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/seerah-prophet-muhammad-beginners.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/introduction-to-tafsir-quran.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/hadith-studies-beginners-guide.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- LEGAL - Lowest Priority -->
   <url><loc>https://alshimaaquranacademy.com/terms.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://alshimaaquranacademy.com/privacy-policy.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
