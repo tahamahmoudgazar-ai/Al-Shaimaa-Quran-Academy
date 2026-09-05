@@ -186,6 +186,42 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
+  <url>
+  <loc>https://alshimaaquranacademy.com/blog/5-daily-prayers-in-islam.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/common-salah-mistakes.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/conditions-of-salah.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/how-many-rakats-in-each-prayer.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/how-to-make-wudu.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/how-to-pray-salah.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/prayer-in-islam.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/prayer-times-in-islam.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
+<url>
+  <loc>https://alshimaaquranacademy.com/blog/what-to-say-in-salah.html</loc>
+  <lastmod>2026-09-05</lastmod>
+</url>
   <!-- LEGAL - Lowest Priority -->
   <url><loc>https://alshimaaquranacademy.com/terms.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://alshimaaquranacademy.com/privacy-policy.html</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
