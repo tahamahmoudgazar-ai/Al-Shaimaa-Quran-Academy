@@ -600,7 +600,48 @@
     <priority>0.7</priority>
   </url>
 
-
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/how-to-pray-dhuhr-step-by-step.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/how-to-pray-asr-step-by-step.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/how-to-pray-maghrib-step-by-step.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/how-to-pray-isha-step-by-step.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/waqf-and-ibtida-rules-tajweed.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/tafkheem-and-tarqeeq-tajweed-heavy-light-letters.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alshimaaquranacademy.com/blog/how-to-avoid-lahn-jali-khafi-tajweed.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- ==================== LEGAL ==================== -->
 
   <url>
