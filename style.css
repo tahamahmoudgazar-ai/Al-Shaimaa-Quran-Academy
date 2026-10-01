@@ -3403,3 +3403,143 @@ body {
 #hero-course-image {
     transition: opacity 0.3s ease;
 }
+
+
+/* ==================================================
+   AL SHIMAA QURAN ACADEMY
+   GLOBAL RELATED ARTICLES - HIGH PRIORITY
+   ================================================== */
+
+section.related-articles {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 32px 0 !important;
+  padding: 24px !important;
+  background: #f2f8f6 !important;
+  border: 1px solid #cfe3dc !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 14px rgba(20, 70, 58, 0.08) !important;
+  color: #24443c !important;
+  font-family: inherit !important;
+  text-align: left !important;
+  line-height: 1.7 !important;
+}
+
+section.related-articles h2 {
+  display: block !important;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  color: #14594b !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  text-align: left !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+section.related-articles > p {
+  display: block !important;
+  margin: 0 0 18px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  color: #526b63 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+section.related-articles ul {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+section.related-articles ul li {
+  display: block !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  list-style: none !important;
+}
+
+section.related-articles ul li::before,
+section.related-articles ul li::after {
+  content: none !important;
+  display: none !important;
+}
+
+section.related-articles ul li a,
+section.related-articles ul li a:link,
+section.related-articles ul li a:visited {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 58px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 14px 16px !important;
+  background: #ffffff !important;
+  border: 1px solid #d6e6df !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  color: #176b58 !important;
+  font-family: inherit !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease !important;
+}
+
+section.related-articles ul li a:hover {
+  background: #e3f3ed !important;
+  border-color: #79b7a4 !important;
+  color: #104c3f !important;
+  text-decoration: underline !important;
+}
+
+section.related-articles ul li a:focus-visible {
+  outline: 3px solid #176b58 !important;
+  outline-offset: 3px !important;
+}
+
+@media (max-width: 600px) {
+  section.related-articles {
+    padding: 16px !important;
+    margin: 24px 0 !important;
+    border-radius: 12px !important;
+  }
+
+  section.related-articles h2 {
+    font-size: 21px !important;
+  }
+
+  section.related-articles ul {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  section.related-articles ul li a,
+  section.related-articles ul li a:link,
+  section.related-articles ul li a:visited {
+    min-height: 50px !important;
+    padding: 12px 14px !important;
+    font-size: 14px !important;
+  }
+}
