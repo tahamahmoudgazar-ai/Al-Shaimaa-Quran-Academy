@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /private/
+Disallow: /cdn-cgi/
 
 Sitemap: https://alshimaaquranacademy.com/sitemap.xml
